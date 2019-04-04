@@ -41,7 +41,7 @@ const ServicesPage = ({ data }) => {
         title={post.frontmatter.title}
         heading={post.frontmatter.heading}
         subheading={post.frontmatter.subheading}
-        body={post.html}
+        content={post.html}
       />
     </Layout>
   )
