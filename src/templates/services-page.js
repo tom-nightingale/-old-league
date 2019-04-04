@@ -3,7 +3,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-export const ServicesPageTemplate = ({ title, heading, subheading }) => {
+export const ServicesPageTemplate = ({ title, heading, subheading, body }) => {
 
 
   return (
