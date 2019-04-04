@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ServicesPageTemplate } from '../../templates/services-page'
 
-const ServicesPagePreview = ({ entry, getAsset }) => {
+const ServicesPagePreview = ({ entry, getAsset, widgetFor }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
@@ -11,7 +11,7 @@ const ServicesPagePreview = ({ entry, getAsset }) => {
         title={data.title}
         heading={data.heading}
         subheading={data.subheading}
-        pageContent={data.body}
+        content={widgetFor('body')}
       />
     )
   } else {

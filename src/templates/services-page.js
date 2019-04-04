@@ -37,10 +37,10 @@ const ServicesPage = ({ data }) => {
   return (
     <Layout>
       <ServicesPageTemplate
+        contentComponent={HTMLContent}
         title={post.frontmatter.title}
         heading={post.frontmatter.heading}
         subheading={post.frontmatter.subheading}
-        contentComponent={HTMLContent}
         body={post.html}
       />
     </Layout>
@@ -56,12 +56,11 @@ export default ServicesPage
 export const servicesPageQuery = graphql`
   query ServicesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-        html
+      html
       frontmatter {
         title
         heading
         subheading
-
       }
     }
   }
