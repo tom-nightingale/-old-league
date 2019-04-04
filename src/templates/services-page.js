@@ -58,6 +58,7 @@ export const servicesPageQuery = graphql`
         title
         heading
         subheading
+        body
       }
     }
   }
