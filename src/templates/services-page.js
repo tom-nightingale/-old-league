@@ -2,9 +2,10 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Content, { HTMLContent } from '../components/Content'
 
-export const ServicesPageTemplate = ({ title, heading, subheading, body }) => {
-
+export const ServicesPageTemplate = ({ title, heading, subheading, content, contentComponent }) => {
+const PageContent = contentComponent || Content
 
   return (
     <section className="section section--gradient">
@@ -15,7 +16,7 @@ export const ServicesPageTemplate = ({ title, heading, subheading, body }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{title}</h2>
               <h4>{heading}</h4>
               <h5>{subheading}</h5>
-              {body}
+             <PageContent className="content" content={content} />
             </div>
           </div>
         </div>
@@ -39,7 +40,8 @@ const ServicesPage = ({ data }) => {
         title={post.frontmatter.title}
         heading={post.frontmatter.heading}
         subheading={post.frontmatter.subheading}
-        body={post.frontmatter.body}
+        contentComponent={HTMLContent}
+        body={post.html}
       />
     </Layout>
   )
@@ -54,11 +56,12 @@ export default ServicesPage
 export const servicesPageQuery = graphql`
   query ServicesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
+        html
       frontmatter {
         title
         heading
         subheading
-        body
+
       }
     }
   }

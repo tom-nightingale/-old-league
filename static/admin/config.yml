@@ -64,4 +64,4 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "body", name: "body", widget: "markdown"}
