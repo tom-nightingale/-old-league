@@ -11,6 +11,7 @@ const ServicesPagePreview = ({ entry, getAsset }) => {
         title={data.title}
         heading={data.heading}
         subheading={data.subheading}
+        subheading={data.body}
       />
     )
   } else {

@@ -17,6 +17,7 @@ export const ServicesPageTemplate = ({ title, heading, subheading }) => {
                 {heading}
                 {subheading}
               </h2>
+              {body}
             </div>
           </div>
         </div>
@@ -40,6 +41,7 @@ const ServicesPage = ({ data }) => {
         title={post.frontmatter.title}
         heading={post.frontmatter.heading}
         subheading={post.frontmatter.subheading}
+        body={post.frontmatter.body}
       />
     </Layout>
   )
