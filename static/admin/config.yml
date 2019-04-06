@@ -65,12 +65,65 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
           - {label: "body", name: "body", widget: "markdown"}
-      - file: "src/pages/web-design/index.md"
+      - file: "src/pages/services/web-design/index.md"
         label: "Web Design"
         name: "web-design"
-        slug: "/services/web-design"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "web-design-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: "body", name: "body", widget: "markdown"}
+       - file: "src/pages/services/web-development/index.md"
+         label: "Web Development"
+         name: "web-development"
+         fields:
+           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "web-development-page"}
+           - {label: "Title", name: "title", widget: "string"}
+           - {label: Heading, name: heading, widget: string}
+           - {label: Subheading, name: subheading, widget: string}
+           - {label: "body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/seo/index.md"
+        label: "SEO"
+        name: "seo"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "seo-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: "body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/ppc/index.md"
+        label: "PPC"
+        name: "ppc"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "ppc-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: "body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/content-marketing/index.md"
+        label: "Content Marketing"
+        name: "content-marketing"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-marketing-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: "body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/copywriting/index.md"
+        label: "Copywriting"
+        name: "copywriting"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "copywriting-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: "body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/telecoms/index.md"
+        label: "Telecoms"
+        name: "telecoms"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "telecoms-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
