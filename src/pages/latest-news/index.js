@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
+import CaseStudiesLoop from '../../components/CaseStudiesLoop'
 
 export default class CaseStudiesIndexPage extends React.Component {
   render() {

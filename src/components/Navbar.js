@@ -22,7 +22,7 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "active"
+              navBarActiveClass: "is-active"
             })
           : this.setState({
               navBarActiveClass: ""
@@ -40,7 +40,7 @@ const Navbar = class extends React.Component {
       >
 
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
+              <img src={logo} alt="Kaldi" />
             </Link>
             {/* Hamburger menu */}
 
@@ -48,13 +48,16 @@ const Navbar = class extends React.Component {
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
-            ></div>
+            >
+                <span />
+                <span />
+                <span />
+            </div>
 
 
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
+            className={`navbar-menu ${this.state.navBarActiveClass}`}>
 
               <Link className="navbar-item" to="/about">
                 About
@@ -80,8 +83,6 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/services/web-development">
                 Web Development
               </Link>
-
-
 
           </div>
       </nav>
