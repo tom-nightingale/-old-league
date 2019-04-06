@@ -69,7 +69,7 @@ collections:
         label: "Web Design"
         name: "web-design"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "web-design-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
