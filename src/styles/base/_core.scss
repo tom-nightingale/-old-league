@@ -1,0 +1,20 @@
+/*---------------------------------------------------------------
+    Core
+--------------------------------------------------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: #0e1d35;
+    color: #000;
+    font: 16px/1.5 sans-serif;
+	min-height: 100vh;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}

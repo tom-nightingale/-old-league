@@ -1,0 +1,14 @@
+/* Italic */
+@font-face {
+    font-family: 'Vision Heavy';
+    src: url('../fonts/vision-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+h1 {
+    font-family: "Vision Heavy";
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 100px;
+}
