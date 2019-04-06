@@ -1,0 +1,17 @@
+.navigation {
+
+    &__item {
+        display: inline-block;
+        color: $beige;
+        text-decoration: none;
+        padding: .5rem;
+
+        &[aria-current] {
+            color: $teal;
+        }
+    }
+
+    &__sub {
+        display: inline-block;
+    }
+}

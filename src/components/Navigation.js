@@ -34,57 +34,57 @@ const Navigation = class extends React.Component {
     return (
       <nav role="navigation" className={`navigation ${this.state.navBarActiveClass}`}>
 
-          <Link className="navbar-item" to="/">
+          <Link className="navigation__item" to="/">
             Home
           </Link>
 
-          <Link className="navbar-item" to="/services">
-            Services Page
+          <Link className="navigation__item" to="/services">
+            Services
           </Link>
 
-          <div ClassName="sub-nav">
-              <Link className="navbar-item" to="/services/web-design">
+          <div className="navigation__sub">
+              <Link className="navigation__item" to="/services/web-design">
                 Web Design
               </Link>
 
-              <Link className="navbar-item" to="/services/web-development">
+              <Link className="navigation__item" to="/services/web-development">
                 Web Development
               </Link>
 
-              <Link className="navbar-item" to="/services/seo">
+              <Link className="navigation__item" to="/services/seo">
                 SEO
               </Link>
 
-              <Link className="navbar-item" to="/services/ppc">
+              <Link className="navigation__item" to="/services/ppc">
                 PPC
               </Link>
 
-              <Link className="navbar-item" to="/services/content-marketing">
+              <Link className="navigation__item" to="/services/content-marketing">
                 Content Marketing
               </Link>
 
-              <Link className="navbar-item" to="/services/copywriting">
+              <Link className="navigation__item" to="/services/copywriting">
                 Copywriting
               </Link>
 
-              <Link className="navbar-item" to="/services/telecoms">
+              <Link className="navigation__item" to="/services/telecoms">
                 Telecoms
               </Link>
           </div>
 
-          <Link className="navbar-item" to="/about">
+          <Link className="navigation__item" to="/about">
             About
           </Link>
 
-          <Link className="navbar-item" to="/latest-news">
+          <Link className="navigation__item" to="/latest-news">
             Latest News
           </Link>
 
-          <Link className="navbar-item" to="/contact">
+          <Link className="navigation__item" to="/contact">
             Contact
           </Link>
 
-          <Link className="navbar-item" to="/contact/examples">
+          <Link className="navigation__item" to="/contact/examples">
             Form Examples
           </Link>
       </nav>
