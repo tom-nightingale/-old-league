@@ -1,11 +1,7 @@
 ---
 templateKey: web-design-page
 title: Web Design
-heading: I have no idea if this is going to work
-subheading: Lets give it a whirl and see what bloody happens!
+heading: Web Design Heading
+subheading: Web Design Subheading
 ---
-Lets give this a little whirly girly.
-
-
-
-**fuck yeah mother fucker!**
+Web Design content****
