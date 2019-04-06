@@ -13,6 +13,7 @@ import TelecomsPagePreview from './preview-templates/TelecomsPagePreview'
 
 import AboutPagePreview from './preview-templates/AboutPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
+import CaseStudiesPreview from './preview-templates/CaseStudiesPreview'
 
 
 CMS.registerPreviewTemplate('index', IndexPagePreview)
@@ -28,3 +29,4 @@ CMS.registerPreviewTemplate('telecoms', TelecomsPagePreview)
 
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
+CMS.registerPreviewTemplate('case-studies', CaseStudiesPreview)
