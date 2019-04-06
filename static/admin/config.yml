@@ -68,6 +68,7 @@ collections:
       - file: "src/pages/web-design/index.md"
         label: "Web Design"
         name: "web-design"
+        slug: "/services/web-design"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "web-design-page"}
           - {label: "Title", name: "title", widget: "string"}

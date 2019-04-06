@@ -45,7 +45,7 @@ WebDesignPage.propTypes = {
 
 export default WebDesignPage
 
-export const webDesignPageQuery = graphql`
+export const webdesignPageQuery = graphql`
   query WebDesignPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
