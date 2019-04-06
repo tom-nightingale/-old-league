@@ -75,9 +75,9 @@ collections:
           - {label: Subheading, name: subheading, widget: string}
           - {label: "body", name: "body", widget: "markdown"}
       - file: "src/pages/services/web-development/index.md"
-         label: "Web Development"
-         name: "web-development"
-         fields:
+        label: "Web Development"
+        name: "web-development"
+        fields:
            - {label: "Template Key", name: "templateKey", widget: "hidden", default: "web-development-page"}
            - {label: "Title", name: "title", widget: "string"}
            - {label: Heading, name: heading, widget: string}
