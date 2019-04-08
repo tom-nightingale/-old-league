@@ -6,9 +6,24 @@
     font-style: italic;
 }
 
-h1 {
-    font-family: "Vision Heavy";
-    text-transform: uppercase;
+@font-face {
+    font-family: 'Manrope Regular';
+    src: url('../fonts/manrope-regular-webfont.woff') format('woff');
     font-weight: normal;
-    font-size: 100px;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Manrope Extra Bold';
+    src: url('../fonts/manrope-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+h1 {
+    font-family: "Manrope Extra Bold";
+    // text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    font-size: 72px;
 }
