@@ -17,53 +17,49 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
 
-  <div className="hero">
-      <div
-        className="hero__image"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-          backgroundPosition: `top left`,
-          backgroundAttachment: `fixed`,
-        }}
-      />
+      <div className="hero">
+          <div
+            className="hero__image"
+            style={{
+              backgroundImage: `url(${
+                !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+              })`,
+              backgroundPosition: `top left`,
+              backgroundAttachment: `fixed`,
+            }}
+          />
 
-      <div className="hero__content">
-          <p className="hero__headline">Hero Title here</p>
-          <p className="hero__subline">Hero sub-line goes here</p>
-          <button>See how we can help</button>
+          <div className="hero__content">
+              <p className="hero__headline">Hero Title here</p>
+              <p className="hero__subline">Hero sub-line goes here</p>
+              <button>See how we can help</button>
+          </div>
       </div>
-  </div>
 
+        <div>
 
+            <h1>{title}</h1>
+            <h3>{subheading}</h3>
+            <h1>{mainpitch.title}</h1>
+            <h3>{mainpitch.description}</h3>
 
+            <h3>{heading}</h3>
+            <p>{description}</p>
 
+            <Features gridItems={intro.blurbs} />
 
-    <div>
+            <Link className="btn" to="/products">
+              See all products
+            </Link>
 
-        <h1>{title}</h1>
-        <h3>{subheading}</h3>
-        <h1>{mainpitch.title}</h1>
-        <h3>{mainpitch.description}</h3>
+            <h3>Latest stories</h3>
+            <BlogRoll />
 
-        <h3>{heading}</h3>
-        <p>{description}</p>
+            <Link className="btn" to="/blog">
+              Read more
+            </Link>
 
-        <Features gridItems={intro.blurbs} />
-
-        <Link className="btn" to="/products">
-          See all products
-        </Link>
-
-        <h3>Latest stories</h3>
-        <BlogRoll />
-
-        <Link className="btn" to="/blog">
-          Read more
-        </Link>
-
-    </div>
+        </div>
 
   </div>
 );
