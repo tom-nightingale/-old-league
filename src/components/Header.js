@@ -36,12 +36,14 @@ const Header = class extends React.Component {
     return (
       <header>
         <Logo />
+
         <div
-          className={`hamburger-menu ${this.state.navBarActiveClass}`}
-          data-target="navMenu"
-          onClick={() => this.toggleHamburger()}
+            className={`hamburger-menu ${this.state.navBarActiveClass}`}
+            data-target="navMenu"
+            onClick={() => this.toggleHamburger()}
         >
         </div>
+
 
         <Navigation />
       </header>

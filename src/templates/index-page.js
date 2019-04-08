@@ -18,18 +18,7 @@ export const IndexPageTemplate = ({
   <div>
 
       <div className="hero">
-          <div
-            className="hero__image"
-            style={{
-              backgroundImage: `url(${
-                !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-              })`,
-              backgroundPosition: `top left`,
-              backgroundAttachment: `fixed`,
-            }}
-          />
-
-          <div className="hero__content">
+           <div className="hero__content">
               <p className="hero__headline">Hero Title here</p>
               <p className="hero__subline">Hero sub-line goes here</p>
               <button>See how we can help</button>

@@ -7,7 +7,7 @@ const Logo = class extends React.Component {
     render() {
         return (
             <Link to="/" className="logo" title="Logo">
-              <img src={logo} alt="League Digital" />
+              <img className="logo__image" src={logo} alt="League Digital" />
             </Link>
         )
     }
