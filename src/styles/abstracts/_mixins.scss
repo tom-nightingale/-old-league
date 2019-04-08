@@ -1,0 +1,49 @@
+/* Media Queries
+--------------------------------------------------------------- */
+
+@mixin bp480 {
+  @media (min-width: #{$x-small-width}) {
+    @content;
+  }
+}
+
+@mixin bp800 {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin bp1000 {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin bp1200 {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
+
+@mixin bp1400 {
+  @media (min-width: #{$x-large-width}) {
+    @content;
+  }
+}
+
+@mixin bp1600 {
+  @media (min-width: #{$full-width}) {
+    @content;
+  }
+}
+
+/* Colours
+--------------------------------------------------------------- */
+@mixin darkGradient() {
+    // /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e1d35+0,233147+100 */
+    background: rgb(14,29,53); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(14,29,53,1) 0%, rgba(35,49,71,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(14,29,53,1) 0%,rgba(35,49,71,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(14,29,53,1) 0%,rgba(35,49,71,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e1d35', endColorstr='#233147',GradientType=1 ); /* IE6-9 */
+}

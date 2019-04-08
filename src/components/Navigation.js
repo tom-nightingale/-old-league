@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import LogoIcon from './LogoIcon.js';
+
 const Navigation = class extends React.Component {
   constructor(props) {
     super(props);
@@ -32,7 +34,21 @@ const Navigation = class extends React.Component {
 
   render() {
     return (
-      <nav role="navigation" className={`navigation ${this.state.navBarActiveClass}`}>
+
+        <div>
+
+        <div
+            className={`hamburger-menu ${this.state.navBarActiveClass}`}
+            data-target="navMenu"
+            onClick={() => this.toggleHamburger()}
+        >
+            X
+        </div>
+
+
+        <nav role="navigation" className={`navigation ${this.state.navBarActiveClass}`}>
+
+          <LogoIcon />
 
           <Link className="navigation__item" to="/">
             Home
@@ -88,6 +104,8 @@ const Navigation = class extends React.Component {
             Form Examples
           </Link>
       </nav>
+
+      </div>
     );
   }
 };
