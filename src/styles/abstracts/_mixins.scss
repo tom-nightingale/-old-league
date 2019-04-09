@@ -51,12 +51,12 @@
     font-weight: normal;
 }
 
-@mixin primary-font-medium {
+@mixin primary-font-bold {
     font-family: 'Manrope Bold', sans-serif;
     font-weight: normal;
 }
 
-@mixin primary-font-bold {
+@mixin primary-font-extra-bold {
     font-family: 'Manrope Extra Bold', sans-serif;
     font-weight: normal;
 }
