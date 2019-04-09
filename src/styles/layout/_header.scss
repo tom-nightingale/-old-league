@@ -6,11 +6,6 @@ header {
     width: 100%;
     padding: 2rem;
     background: $blanc;
-    // box-shadow: 0 10px 10px darken($blue-dark, 5%);
-
-    &:after {
-        content: '';
-    }
 }
 
 .container--header {

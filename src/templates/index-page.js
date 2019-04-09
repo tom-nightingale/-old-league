@@ -18,11 +18,19 @@ export const IndexPageTemplate = ({
   <div>
 
       <div className="hero">
-           <div className="hero__content">
-              <p className="hero__headline">Hero Title here</p>
-              <p className="hero__subline">Hero sub-line goes here</p>
-              <button>See how we can help</button>
+
+          <div className="hero__section">
+              <p className="hero__headline">Web design & <br />digital marketing</p>
+              <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
           </div>
+
+          <div className="hero__section hero__section--mask">
+              <p className="hero__headline">Web design & <br />digital marketing</p>
+              <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
+          </div>
+
+         <button className="hero__button hero__button--primary">See how we can help</button>
+
       </div>
 
         <div>
