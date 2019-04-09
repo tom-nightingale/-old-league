@@ -30,7 +30,6 @@ export const IndexPageTemplate = ({
                 backgroundImage: `url(${
                   !!image.childImageSharp ? image.childImageSharp.fluid.src : image
                 })`,
-                backgroundAttachment: `fixed`,
               }}
           >
               <p className="hero__headline">Web design & <br />digital marketing.</p>

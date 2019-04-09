@@ -50,7 +50,6 @@ const Navigation = class extends React.Component {
 
           <img className="navigation__icon-logo" src={iconlogo} alt="League Digital" />
 
-
           <Link className="navigation__item" to="/">
             Home
           </Link>
