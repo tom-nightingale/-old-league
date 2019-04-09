@@ -1,19 +1,39 @@
 header {
-    background: $blanc;
-    box-shadow: 0 5px 5px #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
     padding: 2rem;
+    background: $blanc;
+    // box-shadow: 0 10px 10px darken($blue-dark, 5%);
+
+    &:after {
+        content: '';
+    }
+}
+
+.container--header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     display: block;
-    max-width: 75%;
+    width: 75%;
 
     &__image {
         display: block;
-        width: 200px;
-        max-width: 200px;
+        width: 100%;
+        max-width: 140px;
+    }
+}
+
+
+@include bp800 {
+    .logo {
+        width: 25%;
     }
 }

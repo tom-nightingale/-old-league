@@ -1,0 +1,32 @@
+.hero {
+    position: relative;
+    @include darkGradient();
+    color: $beige;
+
+    &:before {
+        content: '';
+        display: table;
+        width: 100%;
+        height: 80px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        -webkit-box-shadow: inset 0px 20px 17px -13px darken($blue-dark, 5%);
+        -moz-box-shadow: inset 0px 20px 17px -13px darken($blue-dark, 5%);
+        box-shadow: inset 0px 20px 17px -13px darken($blue-dark, 5%);
+    }
+
+    &__headline {
+
+    }
+
+    &__subline {
+
+    }
+}

@@ -2,37 +2,37 @@
 --------------------------------------------------------------- */
 
 @mixin bp480 {
-  @media (min-width: #{$x-small-width}) {
+  @media (min-width: 480px) {
     @content;
   }
 }
 
 @mixin bp800 {
-  @media (min-width: #{$small-width}) {
+  @media (min-width: 800px) {
     @content;
   }
 }
 
 @mixin bp1000 {
-  @media (min-width: #{$medium-width}) {
+  @media (min-width: 1000px) {
     @content;
   }
 }
 
 @mixin bp1200 {
-  @media (min-width: #{$large-width}) {
+  @media (min-width: 1200px) {
     @content;
   }
 }
 
 @mixin bp1400 {
-  @media (min-width: #{$x-large-width}) {
+  @media (min-width: 1400px) {
     @content;
   }
 }
 
 @mixin bp1600 {
-  @media (min-width: #{$full-width}) {
+  @media (min-width: 1600px) {
     @content;
   }
 }

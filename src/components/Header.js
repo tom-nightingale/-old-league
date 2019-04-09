@@ -7,8 +7,10 @@ const Header = class extends React.Component {
   render() {
     return (
       <header>
-        <Logo />
-        <Navigation />
+          <div className="container container--header">
+            <Logo />
+            <Navigation />
+          </div>
       </header>
     );
   }

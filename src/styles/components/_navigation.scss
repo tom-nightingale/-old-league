@@ -1,54 +1,110 @@
 .navigation {
     position: fixed;
     top: 0;
-    left: 0;
+    right: -100%;
     width: 100%;
     height: 100%;
     z-index: 100;
     background: rgba($blue-dark, .98);
-    padding: 2rem;
-    text-align: center;
+    padding: 3rem;
     flex-direction: column;
     justify-content: center;
-    display: none;
+    transition: .2s;
 
     &__item {
+        position: relative;
         display: block;
         color: $beige;
         text-decoration: none;
-        padding: .5rem;
-        text-transform: uppercase;
+        padding: .75rem .5rem;
 
         &[aria-current] {
             color: $teal;
         }
     }
 
-    &__sub {
-        display: none;
+    &__icon-logo {
+        display: block;
+        width: 30px;
+        margin-bottom: 1rem;
+    }
+
+    &__icon-close {
+        display: inline-block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: $beige;
+        padding: .5rem 1rem;
+        background: lighten($blue-dark, 5%);
     }
 
     &.is-active {
         display: flex;
+        right: 0;
     }
 }
 
-.logo-icon {
-    display: block;
-    width: 50px;
-    margin: 0 auto 2rem;
+.navigation-sub {
+
+    &__item {
+        font-size: 1.4rem;
+        padding-left: 1.75rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 6px;
+            width: 1px;
+            height: 100%;
+            background: rgba($beige, .5);
+        }
+    }
 }
+
 
 .hamburger-menu {
     background: red;
 }
 
-.close-navigation {
-    display: inline-block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    color: $beige;
-    padding: .5rem 1rem;
-    background: lighten($blue-dark, 5%);
+@include bp800 {
+    .navigation-hold {
+        width: 75%;
+    }
+
+    .navigation {
+        position: relative;
+        right: auto;
+        top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+        background: none;
+
+        &__item {
+            color: $blue-dark;
+        }
+
+        &__sub {
+            display: none;
+        }
+
+        &__icon-logo,
+        &__icon-close {
+            display: none;
+        }
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+@include bp1200 {
+    .navigation-hold {
+        width: 50%;
+    }
 }
