@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
       <div className="hero">
 
           <div className="hero__section">
-              <p className="hero__headline">Web design & <br />digital marketing</p>
+              <p className="hero__headline">Web design & <br />digital marketing.</p>
               <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
           </div>
 
@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
                 backgroundAttachment: `fixed`,
               }}
           >
-              <p className="hero__headline">Web design & <br />digital marketing</p>
+              <p className="hero__headline">Web design & <br />digital marketing.</p>
               <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
           </div>
 
