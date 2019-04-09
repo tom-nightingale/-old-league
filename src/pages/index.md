@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Turning visitors into customers
-image: /img/apple-computer-decor-326502.jpg
+image: /img/startup-593343_1920.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
