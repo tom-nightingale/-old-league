@@ -7,21 +7,28 @@
 }
 
 @font-face {
+    font-family: 'Manrope Medium';
+    src: url('../fonts/manrope-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Manrope Bold';
+    src: url('../fonts/manrope-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
     font-family: 'Manrope Extra Bold';
     src: url('../fonts/manrope-extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
-.primary-font-bold {
-    font-family: 'Manrope Extra Bold', sans-serif;
-    font-weight: normal;
-}
-
-
-
 h1 {
-    @extend .primary-font-bold;
+    @include primary-font-bold;
     font-size: 16px;
     font-size: 16px;
 }

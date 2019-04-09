@@ -17,6 +17,7 @@
         color: $beige;
         text-decoration: none;
         padding: .75rem .5rem;
+        // @include primary-font-medium;
 
         &[aria-current] {
             color: $teal;
@@ -86,6 +87,7 @@
 
         &__item {
             color: $blue-dark;
+            @include primary-font-bold;
         }
 
         &__sub {

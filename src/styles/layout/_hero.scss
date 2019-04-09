@@ -1,16 +1,15 @@
 .hero {
     position: relative;
-    // padding: 6rem 0;
     @include darkGradient();
     color: $beige;
 
     &__container {
-        @extend .container;
+        @include container;
         padding: 4rem 1rem;
     }
 
     &__headline {
-        @extend .primary-font-bold;
+        @include primary-font-bold;
     }
 
     &__subline {

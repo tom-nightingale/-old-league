@@ -37,8 +37,30 @@
   }
 }
 
-/* Colours
+/* Layout Mixins
 --------------------------------------------------------------- */
+
+@mixin container {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+@mixin primary-font-medium {
+    font-family: 'Manrope Medium', sans-serif;
+    font-weight: normal;
+}
+
+@mixin primary-font-medium {
+    font-family: 'Manrope Bold', sans-serif;
+    font-weight: normal;
+}
+
+@mixin primary-font-bold {
+    font-family: 'Manrope Extra Bold', sans-serif;
+    font-weight: normal;
+}
+
 @mixin darkGradient() {
     // /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e1d35+0,233147+100 */
     background: rgb(14,29,53); /* Old browsers */
