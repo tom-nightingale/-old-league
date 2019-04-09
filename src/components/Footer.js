@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Logo from './Logo';
-import Navigation from './Navigation';
+import NavItems from './NavItems';
 import SocialLinks from './SocialLinks';
 
 
@@ -10,9 +10,9 @@ const Footer = class extends React.Component {
     return (
       <footer>
         <Logo />
-        <Navigation />
+        <NavItems />
         <SocialLinks />
-        </footer>
+      </footer>
     )
   }
 }

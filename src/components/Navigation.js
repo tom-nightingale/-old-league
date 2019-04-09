@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
 
+import NavItems from './NavItems.js';
 import LogoIcon from './LogoIcon.js';
 
 const Navigation = class extends React.Component {
@@ -35,8 +35,7 @@ const Navigation = class extends React.Component {
   render() {
     return (
 
-        <div>
-
+      <div>
         <div
             className={`hamburger-menu ${this.state.navBarActiveClass}`}
             data-target="navMenu"
@@ -45,65 +44,11 @@ const Navigation = class extends React.Component {
             X
         </div>
 
-
         <nav role="navigation" className={`navigation ${this.state.navBarActiveClass}`}>
-
+          <a className="close-navigation" onClick={() => this.toggleHamburger()}>X</a>
           <LogoIcon />
-
-          <Link className="navigation__item" to="/">
-            Home
-          </Link>
-
-          <Link className="navigation__item" to="/services">
-            Services
-          </Link>
-
-          <div className="navigation__sub">
-              <Link className="navigation__item" to="/services/web-design">
-                Web Design
-              </Link>
-
-              <Link className="navigation__item" to="/services/web-development">
-                Web Development
-              </Link>
-
-              <Link className="navigation__item" to="/services/seo">
-                SEO
-              </Link>
-
-              <Link className="navigation__item" to="/services/ppc">
-                PPC
-              </Link>
-
-              <Link className="navigation__item" to="/services/content-marketing">
-                Content Marketing
-              </Link>
-
-              <Link className="navigation__item" to="/services/copywriting">
-                Copywriting
-              </Link>
-
-              <Link className="navigation__item" to="/services/telecoms">
-                Telecoms
-              </Link>
-          </div>
-
-          <Link className="navigation__item" to="/about">
-            About
-          </Link>
-
-          <Link className="navigation__item" to="/latest-news">
-            Latest News
-          </Link>
-
-          <Link className="navigation__item" to="/contact">
-            Contact
-          </Link>
-
-          <Link className="navigation__item" to="/contact/examples">
-            Form Examples
-          </Link>
-      </nav>
+          <NavItems />
+        </nav>
 
       </div>
     );
