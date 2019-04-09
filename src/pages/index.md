@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Turning visitors into customers
-image: /img/home-jumbotron.jpg
+image: /img/workplace-1245776_1920.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
