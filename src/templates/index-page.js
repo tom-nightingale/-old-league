@@ -24,7 +24,15 @@ export const IndexPageTemplate = ({
               <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
           </div>
 
-          <div className="hero__section hero__section--mask">
+          <div
+          className="hero__section hero__section--mask"
+          style={{
+                backgroundImage: `url(${
+                  !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+                })`,
+                backgroundAttachment: `fixed`,
+              }}
+          >
               <p className="hero__headline">Web design & <br />digital marketing</p>
               <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
           </div>

@@ -50,26 +50,49 @@
             font-size: 6rem;
             line-height: 1.2;
             z-index: 3;
+
+            &::selection {
+                background: $teal;
+                color: $beige;
+            }
         }
 
         &__subline {
             top: 60%;
             left: 20%;
             font-size: 3rem;
+
+            &::selection {
+                background: $teal;
+                color: $beige;
+            }
         }
 
         &__section--mask {
             width: 60%;
-            @include darkGradient;
             box-shadow: inset 0px 20px 17px -13px darken($blue-dark, 5%);
-            color: $teal;
+            color: $beige;
+            background-blend-mode: multiply;
+            background-color: $teal;
+            background-size: cover;
+            background-position: center;
 
             .hero__headline {
                 left: -53.5%;
+
+                &::selection {
+                    background: $teal;
+                    color: $beige;
+                }
             }
 
             .hero__subline {
                 left: -53.2%;
+
+                &::selection {
+                    background: $teal;
+                    color: $beige;
+                }
             }
         }
     }
@@ -77,7 +100,6 @@
 
 @include bp1200 {
     .hero {
-
         &__headline,
         &__subline {
             width: 800px;
