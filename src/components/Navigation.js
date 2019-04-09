@@ -11,7 +11,8 @@ const Navigation = class extends React.Component {
     };
   }
 
-  toggleHamburger = () => {
+  toggleHamburger = (e) => {
+    e.preventDefault(); //cancel default action
     // toggle the active boolean in the state
     this.setState(
       {
@@ -45,7 +46,7 @@ const Navigation = class extends React.Component {
 
         <nav role="navigation" className={`navigation ${this.state.navBarActiveClass}`}>
 
-          <a className="navigation__icon-close" onClick={() => this.toggleHamburger()}>X</a>
+          <a className="navigation__icon-close" href="#" onClick={() => this.toggleHamburger()}>X</a>
 
           <img className="navigation__icon-logo" src={iconlogo} alt="League Digital" />
 
