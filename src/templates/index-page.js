@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Icon from '../components/Icon'
 
 export const IndexPageTemplate = ({
   image,
@@ -22,7 +23,7 @@ export const IndexPageTemplate = ({
           <div className="hero__section">
               <p className="hero__headline">Web design & <br />digital marketing.</p>
               <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
-              <button className="hero__button hero__button--primary">See how we can help ></button>
+              <Link className="hero__button" to="/services">See how we can help <Icon name="icon-right-open-mini"/></Link>
           </div>
 
           <div
@@ -35,9 +36,8 @@ export const IndexPageTemplate = ({
           >
               <p className="hero__headline">Web design & <br />digital marketing.</p>
               <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
-              <button className="hero__button hero__button--primary">See how we can help ></button>
+              <Link className="hero__button" to="/services">See how we can help <Icon name="icon-right-open-mini"/></Link>
           </div>
-
 
       </div>
 

@@ -37,12 +37,22 @@
     }
 
     &__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         background: $beige;
         margin-top: 3rem;
         padding: 1rem;
         color: $blue-dark;
         @include primary-font-bold;
         @include beigeToWhiteGradient;
+        text-decoration: none;
+
+        svg {
+            margin-left: .25rem;
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
@@ -59,9 +69,14 @@
         }
 
         &__button {
-            display: inline-block;
             width: auto;
             margin-right: auto;
+
+            svg {
+                width: 24px;
+                height: 24px;
+                margin-bottom: 3px;
+            }
         }
     }
 
@@ -122,7 +137,8 @@
             top: 65%;
             width: 300px;
             padding: 1.5rem;
-            text-align: left;
+            text-align: center;
+            // text-align: left;
             background: $teal;
             color: $beige;
             font-size: 1.8rem;
@@ -213,7 +229,7 @@
         }
 
         &__subline {
-            max-width: 800px;
+            max-width: 700px;
         }
 
         &__button {

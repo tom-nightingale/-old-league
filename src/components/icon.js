@@ -1,12 +1,12 @@
 import React from 'react';
+import IconSprite from '../img/icons/icons.svg';
 
-const files = require.context('!svg-sprite!../../img/icons', false, /.*\.svg$/);
-files.keys().forEach(files);
-
-const Icon = ({ iconName }) => (
-  <svg className={ `icon-${ iconName }` }>
-    <use xlinkHref={ `#icon-${ iconName }` }></use>
-  </svg>
-);
+const Icon = ({ name, classes }) => {
+    return (
+        <svg className={`${ name } ${classes}`}>
+          <use xlinkHref={`${IconSprite}#${name}`} />
+        </svg>
+    );
+}
 
 export default Icon;

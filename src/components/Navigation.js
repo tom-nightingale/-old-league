@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import iconlogo from "../img/logo-icon--beige.svg";
+import Icon from '../components/Icon';
 
 const Navigation = class extends React.Component {
   constructor(props) {
@@ -26,7 +27,7 @@ const Navigation = class extends React.Component {
               navBarActiveClass: "is-active"
             })
           : this.setState({
-              navBarActiveClass: ""
+              navBarActiveClass: "not-active"
             });
       }
     );
@@ -37,17 +38,15 @@ const Navigation = class extends React.Component {
 
       <div className="navigation-hold">
 
-        <div
-            className={`hamburger-menu ${this.state.navBarActiveClass}`}
-            data-target="navMenu"
-            onClick={() => this.toggleHamburger()}
-        >
-            X
-        </div>
+      <a href="#" class="hamburger-menu" data-target="navMenu" onClick={() => this.toggleHamburger()}>
+          <Icon name="icon-three-bars" />
+      </a>
 
         <nav role="navigation" className={`navigation ${this.state.navBarActiveClass}`}>
 
-          <a className="navigation__icon-close" href="#" onClick={() => this.toggleHamburger()}>X</a>
+          <a className="navigation__icon-close" href="#" onClick={() => this.toggleHamburger()}><Icon name="icon-x" /></a>
+
+
 
           <img className="navigation__icon-logo" src={iconlogo} alt="League Digital" />
 
@@ -59,9 +58,11 @@ const Navigation = class extends React.Component {
                   </Link>
               </li>
 
-              <li className="navigation__list-item">
+              <li className="navigation__list-item navigation__item-has-child">
+
                   <Link className="navigation__item" to="/services">
                     Services
+                    <Icon name="icon-down-open-mini" />
                   </Link>
 
                   <ul className="navigation__sub">

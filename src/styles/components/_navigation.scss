@@ -1,3 +1,7 @@
+.hamburger-menu {
+    color: $teal;
+}
+
 .navigation {
     position: fixed;
     top: 0;
@@ -29,6 +33,14 @@
         &[aria-current] {
             color: $teal;
         }
+
+        span {
+            display: none;
+        }
+
+        svg {
+            display: none;
+        }
     }
 
     &__icon-logo {
@@ -40,10 +52,11 @@
     &__icon-close {
         display: inline-block;
         position: absolute;
-        top: 1rem;
-        right: 1rem;
-        color: $beige;
+        top: 1.25rem;
+        right: 1.25rem;
+        color: $teal;
         padding: .5rem 1rem;
+        line-height: 1;
         background: lighten($blue-dark, 5%);
         text-decoration: none;
     }
@@ -69,11 +82,6 @@
             background: rgba($beige, .5);
         }
     }
-}
-
-
-.hamburger-menu {
-    background: red;
 }
 
 @include bp800 {
@@ -122,6 +130,23 @@
                 span {
                     color: $blue-dark;
                 }
+            }
+
+            span {
+                display: block;
+            }
+        }
+
+        &__item-has-child {
+            svg {
+                display: block;
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 20px;
+                height: 20px;
+                color: rgba($blue-dark, .5);
             }
         }
 
