@@ -11,13 +11,20 @@
     justify-content: center;
     transition: .2s;
 
+    &__list-item {
+        position: relative;
+    }
+
     &__item {
         position: relative;
         display: block;
         color: $beige;
         text-decoration: none;
         padding: .75rem .5rem;
-        // @include primary-font-medium;
+
+        &:hover + .navigation__sub {
+            display: flex;
+        }
 
         &[aria-current] {
             color: $teal;
@@ -38,6 +45,7 @@
         color: $beige;
         padding: .5rem 1rem;
         background: lighten($blue-dark, 5%);
+        text-decoration: none;
     }
 
     &.is-active {
@@ -46,9 +54,8 @@
     }
 }
 
-.navigation-sub {
-
-    &__item {
+.navigation__sub {
+    .navigation__item {
         font-size: 1.4rem;
         padding-left: 1.75rem;
 
@@ -85,18 +92,76 @@
         padding: 0;
         background: none;
 
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+
+            li {
+                list-style: none;
+            }
+        }
+
         &__item {
-            color: $teal;
+            color: $blue-dark;
             @include primary-font-bold;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: .75px;
+            padding: 3.5rem .5rem;
 
             &[aria-current] {
-                color: $blue-dark;
+                color: $teal;
             }
         }
 
         &__sub {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            padding: 2rem;
+            width: 700px;
+            transform: translateX(-50%);
+            border: 0;
+            background: $blanc;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            box-shadow: 0 0 20px rgba(#333, .25);
             display: none;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                width: 20px;
+                height: 20px;
+                transform: translateX(-50%) rotate(45deg);
+                background: $blanc;
+            }
+
+            &:hover {
+                display: flex;
+            }
+
+            li {
+                width: 49%;
+            }
+
+            .navigation__item {
+                font-size: 1.6rem;
+                padding-left: 0;
+                padding: 2rem 1rem;
+
+                span {
+                    display: block;
+                    font-size: 1.2rem;
+                    text-transform: none;
+                    @include primary-font-regular;
+                }
+            }
         }
 
         &__icon-logo,

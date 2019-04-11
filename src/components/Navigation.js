@@ -12,7 +12,7 @@ const Navigation = class extends React.Component {
   }
 
   toggleHamburger = (e) => {
-    e.preventDefault(); //cancel default action
+    // e.preventDefault(); //cancel default action
     // toggle the active boolean in the state
     this.setState(
       {
@@ -36,6 +36,7 @@ const Navigation = class extends React.Component {
     return (
 
       <div className="navigation-hold">
+
         <div
             className={`hamburger-menu ${this.state.navBarActiveClass}`}
             data-target="navMenu"
@@ -50,59 +51,96 @@ const Navigation = class extends React.Component {
 
           <img className="navigation__icon-logo" src={iconlogo} alt="League Digital" />
 
-          <Link className="navigation__item" to="/">
-            Home
-          </Link>
+          <ul className="navigation__list">
 
-          <Link className="navigation__item" to="/services">
-            Services
-          </Link>
+              <li className="navigation__list-item">
+                  <Link className="navigation__item" to="/">
+                    Home
+                  </Link>
+              </li>
 
-          <div className="navigation__sub">
-              <Link className="navigation__item" to="/services/web-design">
-                Web Design
-              </Link>
+              <li className="navigation__list-item">
+                  <Link className="navigation__item" to="/services">
+                    Services
+                  </Link>
 
-              <Link className="navigation__item" to="/services/web-development">
-                Web Development
-              </Link>
+                  <ul className="navigation__sub">
+                      <li>
+                          <Link className="navigation__item" to="/services/web-design">
+                            Web Design
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                          </Link>
+                      </li>
 
-              <Link className="navigation__item" to="/services/seo">
-                SEO
-              </Link>
+                      <li>
+                          <Link className="navigation__item" to="/services/web-development">
+                            Web Development
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                          </Link>
+                      </li>
 
-              <Link className="navigation__item" to="/services/ppc">
-                PPC
-              </Link>
+                      <li>
+                          <Link className="navigation__item" to="/services/seo">
+                            SEO
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                          </Link>
+                      </li>
 
-              <Link className="navigation__item" to="/services/content-marketing">
-                Content Marketing
-              </Link>
+                      <li>
+                          <Link className="navigation__item" to="/services/ppc">
+                            PPC
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                          </Link>
+                      </li>
 
-              <Link className="navigation__item" to="/services/copywriting">
-                Copywriting
-              </Link>
+                      <li>
+                          <Link className="navigation__item" to="/services/content-marketing">
+                            Content Marketing
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                          </Link>
+                      </li>
 
-              <Link className="navigation__item" to="/services/telecoms">
-                Telecoms
-              </Link>
-          </div>
+                      <li>
+                          <Link className="navigation__item" to="/services/copywriting">
+                            Copywriting
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                          </Link>
+                      </li>
 
-          <Link className="navigation__item" to="/about">
-            About
-          </Link>
+                      <li>
+                          <Link className="navigation__item" to="/services/telecoms">
+                            Telecoms
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                          </Link>
+                      </li>
+                  </ul>
+            </li>
 
-          <Link className="navigation__item" to="/latest-news">
-            Latest News
-          </Link>
+             <li className="navigation__list-item">
+                  <Link className="navigation__item" to="/about">
+                    About
+                  </Link>
+             </li>
 
-          <Link className="navigation__item" to="/contact">
-            Contact
-          </Link>
+              <li className="navigation__list-item">
+                  <Link className="navigation__item" to="/latest-news">
+                    Latest News
+                  </Link>
+              </li>
 
-          <Link className="navigation__item" to="/contact/examples">
-            Form Examples
-          </Link>
+              <li className="navigation__list-item">
+                  <Link className="navigation__item" to="/contact">
+                    Contact
+                  </Link>
+              </li>
+
+              <li className="navigation__list-item">
+                  <Link className="navigation__item" to="/contact/examples">
+                    Form Examples
+                  </Link>
+              </li>
+
+          </ul>
         </nav>
 
       </div>
