@@ -22,6 +22,7 @@ export const IndexPageTemplate = ({
           <div className="hero__section">
               <p className="hero__headline">Web design & <br />digital marketing.</p>
               <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
+              <button className="hero__button hero__button--primary">See how we can help ></button>
           </div>
 
           <div
@@ -34,9 +35,9 @@ export const IndexPageTemplate = ({
           >
               <p className="hero__headline">Web design & <br />digital marketing.</p>
               <p className="hero__subline">We design and build websites that generate more leads for your business.</p>
+              <button className="hero__button hero__button--primary">See how we can help ></button>
           </div>
 
-         <button className="hero__button hero__button--primary">See how we can help</button>
 
       </div>
 
