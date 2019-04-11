@@ -110,15 +110,24 @@
             text-transform: uppercase;
             letter-spacing: .75px;
             padding: 3.5rem .5rem;
+            transition: .2s;
 
             &[aria-current] {
                 color: $teal;
+            }
+
+            &:hover {
+                color: rgba($teal, .75);
+
+                span {
+                    color: $blue-dark;
+                }
             }
         }
 
         &__sub {
             position: absolute;
-            top: 100px;
+            top: 90px;
             left: 50%;
             padding: 2rem;
             width: 700px;
