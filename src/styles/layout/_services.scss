@@ -19,14 +19,18 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        &__heading {
+        &__heading,
+        &__description {
             width: 100%;
         }
     }
 }
 
 .services-single {
+    display: block;
     padding: 2rem 0;
+    text-decoration: none;
+    color: $blue-dark;
 
     svg {
         width: 50px;

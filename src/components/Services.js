@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import Icon from '../components/Icon';
@@ -14,7 +15,7 @@ const FeatureGrid = ({ heading, description, gridItems }) => (
       <Link className="services-single" to={item.link} key={item.heading}>
           <Icon name={item.icon} />
           <p className="services-single__heading">{item.heading}</p>
-          <p className="services-single__text">{item.text}</p>          
+          <p className="services-single__text">{item.text}</p>
       </Link>
     ))}
 
