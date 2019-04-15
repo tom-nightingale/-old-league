@@ -24,6 +24,19 @@
             width: 100%;
         }
     }
+
+    @include bp1200 {
+        padding: 5rem 0;
+
+        &__heading {
+            font-size: 3rem;
+        }
+
+        &__description {
+            font-size: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
 }
 
 .services-single {
@@ -31,11 +44,12 @@
     padding: 2rem 0;
     text-decoration: none;
     color: $blue-dark;
+    background: #eee;
 
     svg {
         width: 50px;
         height: 50px;
-        color: $teal;
+        color: $blue-light;
     }
 
     &__heading {
@@ -54,6 +68,21 @@
     }
 
     @include bp1200 {
-        width: 30%;
+        // width: 31%;
+        padding: 3rem;
+        margin: 1.5% 0;
+
+        svg {
+            width: 75px;
+            height: 75px;
+        }
+
+        &__heading {
+            font-size: 2.4rem;
+        }
+
+        &__text {
+            font-size: 1.8rem;
+        }
     }
 }

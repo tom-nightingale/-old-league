@@ -43,6 +43,8 @@ export const IndexPageTemplate = ({
 
       <Services heading={services.heading} description={services.description} gridItems={services.service} />
 
+
+
         <div>
 
             <h1>{title}</h1>
@@ -122,6 +124,13 @@ export const pageQuery = graphql`
         description
         services {
           service {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             icon
             heading
             text
