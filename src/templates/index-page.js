@@ -122,13 +122,7 @@ export const pageQuery = graphql`
         description
         services {
           service {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+            icon
             heading
             text
           }

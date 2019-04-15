@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
+import Icon from '../components/Icon';
 
 const FeatureGrid = ({ heading, description, gridItems }) => (
   <div className="services">
@@ -12,7 +13,7 @@ const FeatureGrid = ({ heading, description, gridItems }) => (
     {gridItems.map(item => (
       <div className="services-single" key={item.heading}>
         <div className="services-single__image">
-          <PreviewCompatibleImage imageInfo={item} />
+          <Icon name="icon-gist" />
         </div>
           <p className="services-single__heading">{item.heading}</p>
           <p className="services-single__text">{item.text}</p>
