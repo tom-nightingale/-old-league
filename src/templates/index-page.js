@@ -51,7 +51,7 @@ export const IndexPageTemplate = ({
             <h3>{heading}</h3>
             <p>{description}</p>
 
-            <Features gridItems={services.service} />
+            <Services gridItems={services.service} />
 
             <Link className="btn" to="/products">
               See all products

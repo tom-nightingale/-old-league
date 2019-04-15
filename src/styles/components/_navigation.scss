@@ -114,9 +114,9 @@
         &__item {
             color: $blue-dark;
             @include primary-font-bold;
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            letter-spacing: .75px;
+            font-size: 1.6rem;
+            // text-transform: uppercase;
+            // letter-spacing: .75px;
             padding: 3.5rem .5rem;
             transition: .2s;
 
