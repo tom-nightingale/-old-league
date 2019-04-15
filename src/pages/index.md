@@ -17,34 +17,30 @@ description: >-
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
 services:
-  heading: Our services
+  heading: What we're good at
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dui id ligula
     cursus placerat. Fusce vel sagittis ante.
   service:
-    - heading: Web Design & Development
-      icon: icon-gist
+    - icon: icon-telescope
+      image: /img/apple-computer-decor-326502.jpg
+      heading: Strategy
+      link: /services/strategy
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    - icon: icon-gist
+      image: /img/apple-computer-decor-326502.jpg
+      heading: Design & Development
       link: /services/web-design
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-    - heading: Digital Marketing
-      icon: icon-rocket
+    - icon: icon-search
+      image: /img/apple-computer-decor-326502.jpg
+      heading: Digital Marketing
       link: /services/digital-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-    - heading: SEO
-      icon: icon-search
-      link: /services/seo
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-    - heading: Paid Marketing
-      icon: icon-telescope
-      link: /services/paid-marketing
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-    - heading: Copywriting
-      icon: icon-file-text
-      link: services/copywriting
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-    - heading: Telecoms
-      icon: icon-graph
-      link: /services/telecoms
+    - icon: icon-rocket
+      image: /img/apple-computer-decor-326502.jpg
+      heading: Content Marketing
+      link: /services/content-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 main:
   heading: Great coffee with no compromises
