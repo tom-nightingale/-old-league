@@ -38,7 +38,7 @@ const Navigation = class extends React.Component {
 
       <div className="navigation-hold">
 
-      <a href="#" class="hamburger-menu" data-target="navMenu" onClick={() => this.toggleHamburger()}>
+      <a href="#" className="hamburger-menu" data-target="navMenu" onClick={() => this.toggleHamburger()}>
           <Icon name="icon-three-bars" />
       </a>
 

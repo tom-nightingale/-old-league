@@ -14,7 +14,8 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  servicesSection,
+  intro,
+  services
 }) => (
   <div>
 
@@ -51,7 +52,7 @@ export const IndexPageTemplate = ({
             <h3>{heading}</h3>
             <p>{description}</p>
 
-            <Features gridItems={servicesSection.services} />
+            <Features gridItems={services.service} />
 
             <Link className="btn" to="/products">
               See all products
@@ -76,8 +77,11 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
-  servicesSection: PropTypes.shape({
-    services: PropTypes.array,
+  intro: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
+  services: PropTypes.shape({
+      service: PropTypes.array,
   }),
 }
 
@@ -93,7 +97,8 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        servicesSection={frontmatter.servicesSection}
+        intro={frontmatter.intro}
+        services={frontmatter.services}
       />
     </Layout>
   )
@@ -128,8 +133,8 @@ export const pageQuery = graphql`
           description
         }
         description
-        servicesSection {
-          services {
+        intro {
+          blurbs {
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {
@@ -137,6 +142,21 @@ export const pageQuery = graphql`
                 }
               }
             }
+            text
+          }
+          heading
+          description
+        }
+        services {
+          service {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            heading
             text
           }
           heading
