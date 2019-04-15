@@ -41,7 +41,7 @@ export const IndexPageTemplate = ({
 
       </div>
 
-      <Services heading={services.heading} description={services.description} gridItems={services.service} />
+      <Services heading={services.heading} description={services.description} link={services.link} gridItems={services.service} />
 
 
 

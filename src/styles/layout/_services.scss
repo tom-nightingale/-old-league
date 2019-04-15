@@ -1,13 +1,19 @@
 .services {
     background: $blanc;
-    @include container;
-    padding: 3rem;
+    padding: 3rem 2rem;
     text-align: center;
+    background-color: $blue-dark;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: $beige;
+
+    &__container {
+        @include container;
+    }
 
     &__heading {
         font-size: 2.8rem;
         @include primary-font-extra-bold;
-        color: $blue-dark;
     }
 
     &__description {
@@ -15,13 +21,10 @@
     }
 
     @media (min-width: 600px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        &__heading,
-        &__description {
-            width: 100%;
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 
@@ -40,27 +43,40 @@
 }
 
 .services-single {
+    position: relative;
     display: block;
     padding: 2rem 0;
+    margin-bottom: 4rem;
     text-decoration: none;
-    color: $blue-dark;
-    background: #eee;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
 
     svg {
+        display: none;
         width: 50px;
         height: 50px;
-        color: $blue-light;
     }
 
     &__heading {
         margin-bottom: 1rem;
         @include primary-font-extra-bold;
         font-size: 1.8rem;
-        color: $teal;
+        background: $beige;
+        color: $blue-dark;
+        padding: .5rem 0;
     }
 
     &__text {
         font-size: 1.4rem;
+        position: absolute;
+        bottom: -100%;
+    }
+
+    &:hover & {
+        &__text {
+            bottom: 0;
+        }
     }
 
     @media (min-width: 600px) {

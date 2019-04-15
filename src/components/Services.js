@@ -4,21 +4,32 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Icon from '../components/Icon';
 
-const FeatureGrid = ({ heading, description, gridItems }) => (
+const FeatureGrid = ({ heading, description, link, gridItems }) => (
   <div className="services">
 
-    <p className="services__heading">{heading}</p>
+      <div className="services__container">
 
-    <p className="services__description">{description}</p>
+        <p className="services__heading">{heading}</p>
 
-    {gridItems.map(item => (
-      <Link className="services-single" to={item.link} key={item.heading}>
-          <Icon name={item.icon} />
-          <PreviewCompatibleImage imageInfo={item} />
-          <p className="services-single__heading">{item.heading}</p>
-          <p className="services-single__text">{item.text}</p>
-      </Link>
-    ))}
+        <p className="services__description">{description}</p>
+
+        {gridItems.map(item => (
+          <Link
+          className="services-single"
+          to={link}
+          key={item.heading}
+          style={{
+            backgroundImage: `url(${
+              !!item.image.childImageSharp ? item.image.childImageSharp.fluid.src : item.image
+            })`,
+          }}>
+              <Icon name={item.icon} /> 
+              <p className="services-single__heading">{item.heading}</p>
+              <p className="services-single__text">{item.text}</p>
+          </Link>
+        ))}
+
+    </div>
 
   </div>
 )
