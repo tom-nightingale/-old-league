@@ -51,6 +51,27 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+services:
+  heading: Services Heading
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dui id ligula
+    cursus placerat. Fusce vel sagittis ante.
+  service:
+    - image: /img/chemex.jpg
+      heading: Web Design & Development
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    - image: /img/apple-computer-decor-326502.jpg
+      heading: Digital Marketing
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    - image: /img/apple-computer-decor-326502.jpg
+      heading: Copywriting
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    - image: /img/apple-computer-decor-326502.jpg
+      heading: CRO
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    - image: /img/apple-computer-decor-326502.jpg
+      heading: Telecoms
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 main:
   heading: Great coffee with no compromises
   description: >
