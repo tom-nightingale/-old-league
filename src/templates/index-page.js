@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
+import Services from '../components/Services'
 import BlogRoll from '../components/BlogRoll'
 import Icon from '../components/Icon'
 
@@ -75,7 +75,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,,
+  description: PropTypes.string,
   services: PropTypes.shape({
       service: PropTypes.array,
   }),
