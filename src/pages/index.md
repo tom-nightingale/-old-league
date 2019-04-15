@@ -22,17 +22,17 @@ services:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dui id ligula
     cursus placerat. Fusce vel sagittis ante.
   service:
-    - image: /img/chemex.jpg
-      heading: Web Design & Development
+    - heading: Web Design & Development
+      icon-code: icon-gist
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-    - image: /img/apple-computer-decor-326502.jpg
-      heading: Digital Marketing
+    - heading: Digital Marketing
+      icon-code: icon-search
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-    - image: /img/apple-computer-decor-326502.jpg
-      heading: Copywriting
+    - heading: Copywriting
+      icon-code: icon-file-text
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-    - image: /img/apple-computer-decor-326502.jpg
-      heading: Telecoms
+    - heading: Telecoms
+      icon-code: icon-graph
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 main:
   heading: Great coffee with no compromises
