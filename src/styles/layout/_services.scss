@@ -1,7 +1,7 @@
 .services {
     background: $blanc;
     @include container;
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
 
     &__heading {
@@ -26,16 +26,19 @@
 }
 
 .services-single {
-    margin: 2rem 0;
+    padding: 2rem 0;
 
-    &__image {
-        margin-bottom: 1rem;
+    svg {
+        width: 50px;
+        height: 50px;
+        color: $teal;
     }
 
     &__heading {
-        color: $teal;
-        font-size: 1.8rem;
+        margin-bottom: 1rem;
         @include primary-font-extra-bold;
+        font-size: 1.8rem;
+        color: $teal;
     }
 
     &__text {

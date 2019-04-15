@@ -23,16 +23,16 @@ services:
     cursus placerat. Fusce vel sagittis ante.
   service:
     - heading: Web Design & Development
-      icon-code: icon-gist
+      icon: icon-gist
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Digital Marketing
-      icon-code: icon-search
+      icon: icon-search
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Copywriting
-      icon-code: icon-file-text
+      icon: icon-file-text
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Telecoms
-      icon-code: icon-graph
+      icon: icon-graph
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 main:
   heading: Great coffee with no compromises
@@ -51,4 +51,3 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
-
