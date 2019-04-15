@@ -24,15 +24,19 @@ services:
   service:
     - heading: Web Design & Development
       icon: icon-gist
+      link: /services/web-design
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Digital Marketing
       icon: icon-search
+      link: /services/digital-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Copywriting
       icon: icon-file-text
+      link: services/copywriting
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Telecoms
       icon: icon-graph
+      link: /services/telecoms
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 main:
   heading: Great coffee with no compromises
@@ -51,3 +55,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
