@@ -27,8 +27,16 @@ services:
       link: /services/web-design
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Digital Marketing
-      icon: icon-search
+      icon: icon-rocket
       link: /services/digital-marketing
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    - heading: SEO
+      icon: icon-search
+      link: /services/seo
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    - heading: Paid Marketing
+      icon: icon-telescope
+      link: /services/paid-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Copywriting
       icon: icon-file-text
