@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  intro,
+  servicesSection,
 }) => (
   <div>
 
@@ -51,7 +51,7 @@ export const IndexPageTemplate = ({
             <h3>{heading}</h3>
             <p>{description}</p>
 
-            <Features gridItems={intro.blurbs} />
+            <Features gridItems={servicesSection.services} />
 
             <Link className="btn" to="/products">
               See all products
@@ -76,8 +76,8 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  servicesSection: PropTypes.shape({
+    services: PropTypes.array,
   }),
 }
 
@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        intro={frontmatter.intro}
+        servicesSection={frontmatter.servicesSection}
       />
     </Layout>
   )
@@ -128,8 +128,8 @@ export const pageQuery = graphql`
           description
         }
         description
-        intro {
-          blurbs {
+        servicesSection {
+          services {
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {
