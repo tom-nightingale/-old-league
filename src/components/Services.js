@@ -11,11 +11,11 @@ const FeatureGrid = ({ heading, description, gridItems }) => (
     <p className="services__description">{description}</p>
 
     {gridItems.map(item => (
-      <div className="services-single" key={item.heading}>
+      <Link className="services-single" to={item.link} key={item.heading}>
           <Icon name={item.icon} />
           <p className="services-single__heading">{item.heading}</p>
-          <p className="services-single__text">{item.text}</p>
-      </div>
+          <p className="services-single__text">{item.text}</p>          
+      </Link>
     ))}
 
   </div>
