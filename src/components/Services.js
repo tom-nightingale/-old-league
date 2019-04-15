@@ -2,17 +2,23 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-const FeatureGrid = ({ gridItems }) => (
+const FeatureGrid = ({ heading, description, gridItems }) => (
   <div className="services">
+
+    <p className="services__heading">{heading}</p>
+
+    <p className="services__description">{description}</p>
+
     {gridItems.map(item => (
-      <div key={item.heading}>
-        <div className="services__image">
+      <div className="services-single" key={item.heading}>
+        <div className="services-single__image">
           <PreviewCompatibleImage imageInfo={item} />
         </div>
-          <p className="services__title">{item.heading}</p>
-          <p className="services__intro">{item.text}</p>
+          <p className="services-single__heading">{item.heading}</p>
+          <p className="services-single__text">{item.text}</p>
       </div>
     ))}
+
   </div>
 )
 

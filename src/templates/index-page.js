@@ -41,6 +41,8 @@ export const IndexPageTemplate = ({
 
       </div>
 
+      <Services heading={services.heading} description={services.description} gridItems={services.service} />
+
         <div>
 
             <h1>{title}</h1>
@@ -51,18 +53,8 @@ export const IndexPageTemplate = ({
             <h3>{heading}</h3>
             <p>{description}</p>
 
-            <Services gridItems={services.service} />
-
-            <Link className="btn" to="/products">
-              See all products
-            </Link>
-
             <h3>Latest stories</h3>
             <BlogRoll />
-
-            <Link className="btn" to="/blog">
-              Read more
-            </Link>
 
         </div>
 

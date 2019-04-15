@@ -47,10 +47,18 @@
     font-weight: normal;
 }
 
+h1,
+h2,
+h3 {
+    @include primary-font-extra-bold;
+}
+
 h1 {
-    @include primary-font-bold;
-    font-size: 16px;
-    font-size: 16px;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
 }
 
 
