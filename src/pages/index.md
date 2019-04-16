@@ -10,15 +10,9 @@ intro:
   heading: Web design intro heading
   subheading: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel
-    tincidunt justo, in tincidunt mauris. Suspendisse quis augue felis. Aliquam
-    scelerisque cursus ipsum, ac sodales mauris viverra a. Fusce leo ex, viverra
-    sed tellus aliquet, sollicitudin rhoncus turpis. Pellentesque et eros eget
-    purus porttitor lobortis nec in orci. Pellentesque ut justo porta, viverra
-    nunc scelerisque, auctor risus. Vivamus ac libero et ex pharetra egestas
-    aliquet eu elit. Sed justo nibh, maximus mattis rutrum a, pretium vel diam.
-    Pellentesque accumsan fringilla lectus, sed egestas orci consequat sit amet.
-    Aliquam efficitur rutrum felis sed accumsan. Vivamus fermentum lacus quis
-    aliquam consequat.
+    tincidunt justo.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dui id ligula
+  cursus placerat. Fusce vel sagittis ante.
 services:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dui id ligula
@@ -46,4 +40,3 @@ services:
       link: /services/content-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 ---
-
