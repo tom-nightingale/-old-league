@@ -19,7 +19,7 @@ services:
     cursus placerat. Fusce vel sagittis ante.
   heading: What we're good at
   service:
-    - heading: Strategy
+    - heading: StrategyYYYyy
       icon: icon-telescope
       image: /img/apple-computer-decor-326502.jpg
       link: /services/strategy
