@@ -23,17 +23,17 @@ services:
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Design & Development
       icon: icon-gist
-      image: /img/apple-computer-decor-326502.jpg
+      image: /img/blog-index.jpg
       link: /services/web-design
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Digital Marketing
       icon: icon-search
-      image: /img/apple-computer-decor-326502.jpg
+      image: /img/chemex.jpg
       link: /services/digital-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Content Marketing
       icon: icon-rocket
-      image: /img/apple-computer-decor-326502.jpg
+      image: /img/flavor_wheel.jpg
       link: /services/content-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 ---
