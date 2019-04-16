@@ -11,9 +11,7 @@ intro:
   heading: Intro Heading
   subheading: Intro Subheading
 services:
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dui id ligula
-    cursus placerat. Fusce vel sagittis ante.
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   heading: What we're good at
   service:
     - heading: Strategy
