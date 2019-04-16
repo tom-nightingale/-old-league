@@ -40,7 +40,7 @@ export const IndexPageTemplate = ({
       <div className="container">
           <h1>{intro.heading}</h1>
           <h3>{intro.subheading}</h3>
-          <p>{intro.description}</p>
+          {intro.description}
       </div>
 
 
@@ -107,6 +107,7 @@ export const pageQuery = graphql`
         intro {
           heading
           subheading
+          description
         }
         services {
           heading
