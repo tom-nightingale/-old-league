@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-heroImage: /img/apple-computer-decor-326502.jpg
+heroImage: /img/workplace-1245776_1920.jpg
 hero:
   buttonDestination: /services
   buttonText: See how we can help
