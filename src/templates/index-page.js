@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Services from '../components/Services'
 import BlogRoll from '../components/BlogRoll'
-import Icon from '../components/Icon'
+import Icon from '../components/Icon.js'
 
 export const IndexPageTemplate = ({
   heroImage,
