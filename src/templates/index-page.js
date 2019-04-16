@@ -8,12 +8,9 @@ import BlogRoll from '../components/BlogRoll'
 import Icon from '../components/Icon'
 
 export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
+  heroImage,
+  hero,
+  intro,
   services
 }) => (
   <div>
@@ -30,7 +27,7 @@ export const IndexPageTemplate = ({
           className="hero__section hero__section--mask"
           style={{
                 backgroundImage: `url(${
-                  !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+                  !!heroImage.childImageSharp ? heroImage.childImageSharp.fluid.src : heroImage
                 })`,
               }}
           >
@@ -41,19 +38,17 @@ export const IndexPageTemplate = ({
 
       </div>
 
+
+      <div className="container">
+          <h1>{intro.heading}</h1>
+          <h3>{intro.subheading}</h3>
+          <p>{intro.description}</p>
+      </div>
+
+
       <Services heading={services.heading} description={services.description} gridItems={services.service} />
 
-
-
         <div>
-
-            <h1>{title}</h1>
-            <h3>{subheading}</h3>
-            <h1>{mainpitch.title}</h1>
-            <h3>{mainpitch.description}</h3>
-
-            <h3>{heading}</h3>
-            <p>{description}</p>
 
             <h3>Latest stories</h3>
             <BlogRoll />
@@ -64,12 +59,9 @@ export const IndexPageTemplate = ({
 );
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
+  heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  hero: PropTypes.object,
+  intro: PropTypes.object,
   services: PropTypes.shape({
       service: PropTypes.array,
   }),
@@ -81,12 +73,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
+        heroImage={frontmatter.heroImage}
+        hero={frontmatter.hero}
+        intro={frontmatter.intro}
         services={frontmatter.services}
       />
     </Layout>
@@ -107,22 +96,26 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
-        image {
+        heroImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
+        hero {
+          heading
+          subheading
+          buttonText
+          buttonDestination
         }
-        description
+        intro {
+          heading
+          subheading
+        }
         services {
+          heading
+          description
           service {
             image {
               childImageSharp {
@@ -135,8 +128,6 @@ export const pageQuery = graphql`
             heading
             text
           }
-          heading
-          description
         }
       }
     }
