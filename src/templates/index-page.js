@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
           <div className="hero__section">
               <p className="hero__headline">Web design & <br />digital marketing.</p>
               <p className="hero__subline">{hero.subheading}</p>
-              <Link className="hero__button" to="/services">See how we can help <NewIcon name="icon-right-open-mini"/></Link>
+              <Link className="hero__button" to="/services">See how we can help <Icon name="icon-right-open-mini"/></Link>
           </div>
 
           <div
