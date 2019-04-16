@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'League Digital | Web Design & Digital Marketing Agency Nottingham',
     description:
-      'League Digital are a digital design and marketing agency based in Nottingham. We work with small businesses to increase your online presence.',
+      'League Digital are a digital design and marketing agency based in Nottingham. We work with small businesses to increase your online presence',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
