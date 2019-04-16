@@ -1,7 +1,7 @@
 import React from 'react';
 import IconSprite from '../img/icons/icons.svg';
 
-const NewIcon = ({ name, classes }) => {
+const Icon = ({ name, classes }) => {
     return (
         <svg className={`${ name } ${classes}`}>
           <use xlinkHref={`${IconSprite}#${name}`} />
@@ -9,4 +9,4 @@ const NewIcon = ({ name, classes }) => {
     );
 }
 
-export default NewIcon;
+export default Icon;

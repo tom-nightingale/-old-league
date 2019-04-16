@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Services from '../components/Services'
 import BlogRoll from '../components/BlogRoll'
-import NewIcon from '../components/NewIcon'
+import Icon from '../components/NewIcon'
 
 export const IndexPageTemplate = ({
   heroImage,
@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
           >
               <p className="hero__headline">Web design & <br />digital marketing.</p>
               <p className="hero__subline">{hero.subheading}</p>
-              <Link className="hero__button" to="/services">See how we can help <NewIcon name="icon-right-open-mini"/></Link>
+              <Link className="hero__button" to="/services">See how we can help <Icon name="icon-right-open-mini"/></Link>
           </div>
 
       </div>
@@ -47,12 +47,9 @@ export const IndexPageTemplate = ({
 
       <Services heading={services.heading} description={services.description} gridItems={services.service} />
 
-        <div>
-
-            <h3>Latest stories</h3>
-            <BlogRoll />
-
-        </div>
+      <div>
+      Projects here:
+      </div>
 
   </div>
 );
