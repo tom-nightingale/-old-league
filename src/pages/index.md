@@ -7,13 +7,13 @@ hero:
   heading: Web Design & <br> Digital Marketing Nottingham
   subheading: We design and build websites that generate more leads for your business.
 intro:
-  heading: Web design intro heading
-  subheading: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel tincidunt justo.
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dui id ligula cursus placerat. Fusce vel sagittis ante.
+  description: hello world!
+  heading: Intro Heading
+  subheading: Intro Subheading
 services:
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dui id ligula cursus placerat. Fusce vel sagittis ante.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dui id ligula
+    cursus placerat. Fusce vel sagittis ante.
   heading: What we're good at
   service:
     - heading: StrategyYYYyy
@@ -37,3 +37,4 @@ services:
       link: /services/content-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 ---
+
