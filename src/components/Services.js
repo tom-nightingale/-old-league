@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import Icon from '../components/Icon';
+import Icon from './Icon';
 
 const FeatureGrid = ({ heading, description, gridItems }) => (
   <div className="services">
