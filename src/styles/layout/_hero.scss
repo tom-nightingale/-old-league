@@ -82,7 +82,7 @@
 
 }
 
-@media (min-width: 600px) {
+@include bp600 {
     .hero {
         position: relative;
         display: flex;

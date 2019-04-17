@@ -1,7 +1,10 @@
 .company-intro {
-    @include container;
     background: $beige;
     padding: 2rem;
+
+    &__container {
+        @include container;
+    }
 
     &__heading {
         margin-bottom: 1rem;
@@ -11,5 +14,9 @@
 
     &__body {
 
+    }
+
+    @include bp600 {
+        background: $blanc;
     }
 }
