@@ -37,17 +37,15 @@ export const IndexPageTemplate = ({
 
       </div>
 
-      <div className="who-we-are">
-          <h1>{intro.heading}</h1>
-          <h3>{intro.subheading}</h3>
-          {intro.description}
+      <div className="company-intro">
+          <p className="company-intro__heading">We are League.</p>
+          <p className="company-intro__body">{intro.description}</p>
       </div>
-
 
       <Services heading={services.heading} description={services.description} gridItems={services.service} />
 
       <div>
-      Projects here:
+          Projects here:
       </div>
 
   </div>
