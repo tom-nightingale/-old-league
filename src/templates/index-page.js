@@ -42,11 +42,9 @@ export const IndexPageTemplate = ({
       <div className="company-intro">
           <div className="company-intro__container">
 
-              <div className="company-intro__heading">
-
-
+              <div className="company-intro__header">
                   <img className="company-intro__icon-logo" src={verticalLogo} alt="League Digital Logo" />
-                  <p>We are League.</p>
+                  <p className="company-intro__heading">We are <span>League</span>.</p>
               </div>
               <div className="company-intro__body">
                   <h2>Who are we?</h2>

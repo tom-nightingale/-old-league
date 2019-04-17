@@ -10,10 +10,24 @@
         display: none;
     }
 
-    &__heading {
+    &__header {
+        position: relative;
         margin-bottom: 1rem;
+    }
+
+    &__heading {
+        position: relative;
+        z-index: 1;
         font-size: 2.5rem;
         @include primary-font-extra-bold;
+
+        span {
+            // background: $blue-light;
+            // color: $beige;
+            // padding: 2rem 2rem 1rem 2rem;
+            // text-transform: uppercase;
+            // letter-spacing: 5px;
+        }
     }
 
     &__body {
@@ -46,11 +60,17 @@
             justify-content: space-around;
         }
 
-        &__heading {
-            position: relative;
+        &__header {
             display: flex;
+            justify-content: center;
+            align-items: center;
             width: 35%;
             text-align: center;
+        }
+
+        &__heading {
+            position: relative;
+            z-index: 2;
             font-size: 3.25rem;
 
             p {
@@ -70,12 +90,13 @@
 
         &__icon-logo {
             display: block;
+            max-width: 100px;
             margin: 0 auto;
             position: absolute;
             top: 50%;
             left: 50%;
+            z-index: 0;
             transform: translateX(-50%) translateY(-50%);
-            max-width: 90px;
             opacity: .05;
         }
     }
@@ -94,5 +115,17 @@
 
     @include bp1600 {
         padding: 14rem 2rem;
+
+        &__header {
+            width: 40%;
+        }
+
+        &__heading {
+            font-size: 6.5rem;
+        }
+
+        &__body {
+            width: 50%;
+        }
     }
 }
