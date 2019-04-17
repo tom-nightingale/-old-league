@@ -22,22 +22,22 @@ services:
   service:
     - heading: Strategy
       icon: icon-telescope
-      image: /img/apple-computer-decor-326502.jpg
+      image: /img/startup-593341_1920.jpg
       link: /services/strategy
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Design & Development
       icon: icon-gist
-      image: /img/blog-index.jpg
+      image: /img/code-1839406_1920.jpg
       link: /services/web-design
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Digital Marketing
       icon: icon-search
-      image: /img/chemex.jpg
+      image: /img/digital-marketing-1433427_1920.jpg
       link: /services/digital-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
     - heading: Content Marketing
       icon: icon-rocket
-      image: /img/flavor_wheel.jpg
+      image: /img/apple-computer-decor-326502.jpg
       link: /services/content-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 ---
