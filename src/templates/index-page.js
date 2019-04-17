@@ -157,6 +157,7 @@ export const pageQuery = graphql`
           heading
           description
           service {
+            icon
             image {
               childImageSharp {
                 fluid(maxWidth: 600, quality: 100) {
@@ -164,7 +165,7 @@ export const pageQuery = graphql`
                 }
               }
             }
-            icon
+            link
             heading
             text
           }
