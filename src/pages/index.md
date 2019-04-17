@@ -7,15 +7,14 @@ hero:
   heading: Web Design & <br> Digital Marketing Nottingham
   subheading: We design and build websites that generate more leads for your business.
 intro:
-  description: >-
+  body: >-
     We're a group of experienced, multi-disciplined digital experts who strive
-    to go above and beyond for our clients. 
+    to go above and beyond for our clients.
 
 
     We believe that honesty, transparency and creativity pave the way for long
     standing clients who achieve their digital goals.
   heading: Who we are.
-  subheading: Intro Subheading
 services:
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   heading: What we're good at
@@ -41,4 +40,3 @@ services:
       link: /services/content-marketing
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
 ---
-
