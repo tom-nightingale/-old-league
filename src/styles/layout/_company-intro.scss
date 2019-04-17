@@ -20,14 +20,14 @@
         h2 {
             display: none;
             margin-bottom: 2rem;
+
+            & + p {
+                @include primary-font-bold;
+            }
         }
 
         p {
             margin-bottom: 2rem;
-
-            &:first-child {
-                @include primary-font-bold;
-            }
         }
     }
 
@@ -75,7 +75,7 @@
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            max-width: 50px;
+            max-width: 90px;
             opacity: .05;
         }
     }
@@ -87,7 +87,7 @@
             font-size: 4.5rem;
         }
 
-        &__body p:first-child {
+        &__body h2 + p {
             font-size: 2rem;
         }
     }
