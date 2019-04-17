@@ -90,8 +90,8 @@
         width: 100%;
         background: $beige;
         color: $blue-dark;
-        -webkit-clip-path: polygon(100% 0, 100% 90%, 40% 100%, 0 90%, 0 0);
-        clip-path: polygon(100% 0, 100% 90%, 40% 100%, 0 90%, 0 0);
+        // -webkit-clip-path: polygon(100% 0, 100% 95%, 40% 100%, 0 95%, 0 0);
+        // clip-path: polygon(100% 0, 100% 95%, 40% 100%, 0 95%, 0 0);
 
         &__section {
             display: block;
@@ -140,7 +140,6 @@
             width: 300px;
             padding: 1.5rem;
             text-align: center;
-            // text-align: left;
             background: $teal;
             color: $beige;
             font-size: 1.8rem;
@@ -221,6 +220,7 @@
 
 @include bp1200 {
     .hero {
+
         &__headline,
         &__subline {
             width: 1200px;

@@ -39,9 +39,11 @@ export const IndexPageTemplate = ({
       </div>
 
       <div className="company-intro">
-          <img className="navigation__icon-logo" src={iconlogo} alt="League Digital" />
-          <p className="company-intro__heading">We are League.</p>
-          <p className="company-intro__body">{intro.description}</p>
+          <div className="company-intro__container">
+              <img className="navigation__icon-logo" src={iconlogo} alt="League Digital" />
+              <p className="company-intro__heading">We are League.</p>
+              <p className="company-intro__body">{intro.description}</p>
+          </div>          
       </div>
 
       <Services heading={services.heading} description={services.description} gridItems={services.service} />
