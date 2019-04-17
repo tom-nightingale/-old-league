@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import MarkdownContent from '../components/MarkdownContent'
 
 import Layout from '../components/Layout'
 import Services from '../components/Services'
@@ -46,12 +47,9 @@ export const IndexPageTemplate = ({
                   <img className="company-intro__icon-logo" src={verticalLogo} alt="League Digital Logo" />
                   <p className="company-intro__heading">We are <span>League</span>.</p>
               </div>
-              <div className="company-intro__body">
-                  <p>We're a group of experienced, multi-disciplined digital experts who strive to go above and beyond for our clients.</p>
-                  <p>A wealth of experience has tought us that honesty, transparency and creativity pave the way for long standing clients that achieve their digital goals.</p>
-                  <p>Whether you're a small business looking to launch a digital presence, or a well established organisation looking to refresh and renovate your existing assets, we can help.</p>
-                  <p>Our staff have worked in the digital industry for over 10 years, with experience in <Link to="/services/web-design">web design</Link>, <Link to="/services/seo">search engine optimisation</Link> and <Link to="/services/paid-marketing">paid marketing</Link>.</p>
-              </div>
+
+              <MarkdownContent content={intro.body} className="company-intro__body" />
+
           </div>
       </div>
 

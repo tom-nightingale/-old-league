@@ -135,16 +135,15 @@
             }
 
             //modifiers
-            &--call {
+            &--contact {
                 align-self: center;
-                background: $teal-light;
-                color: $blanc;
                 padding: 1rem;
-                border-radius: 5px;
+                border: 2px solid $teal-light;
+                color: $teal-light;
 
                 &:hover {
                     color: $beige;
-                    background: $blue-dark;
+                    background: $teal-light;
                 }
             }
         }
