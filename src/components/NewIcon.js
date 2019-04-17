@@ -1,9 +1,9 @@
 import React from 'react';
 import IconSprite from '../img/icons/icons.svg';
 
-const Icon = ({ name, classes }) => {
+const Icon = ({ name }) => {
     return (
-        <svg className={`${ name } ${classes}`}>
+        <svg className={`${ name }`}>
           <use xlinkHref={`${IconSprite}#${name}`} />
         </svg>
     );

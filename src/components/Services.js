@@ -23,7 +23,7 @@ const FeatureGrid = ({ heading, description, gridItems }) => (
               !!item.image.childImageSharp ? item.image.childImageSharp.fluid.src : item.image
             })`,
           }}>
-              <Icon name={item.icon} />
+              <Icon name={item.icon}/>
               <p className="services-single__heading">{item.heading}</p>
               <p className="services-single__text">{item.text}</p>
           </Link>
