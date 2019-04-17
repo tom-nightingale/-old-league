@@ -23,6 +23,7 @@ const FeatureGrid = ({ heading, description, gridItems }) => (
             })`,
           }}>
               <Icon name={item.icon}/>
+              {item.link}
               <p className="services-single__heading">{item.heading}</p>
               <p className="services-single__text">{item.text}</p>
           </Link>
