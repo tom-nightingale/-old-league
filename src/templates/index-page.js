@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Services from '../components/Services'
 import Icon from '../components/NewIcon'
+import iconlogo from "../img/logo-icon--beige.svg";
 
 export const IndexPageTemplate = ({
   heroImage,
@@ -38,6 +39,7 @@ export const IndexPageTemplate = ({
       </div>
 
       <div className="company-intro">
+          <img className="navigation__icon-logo" src={iconlogo} alt="League Digital" />
           <p className="company-intro__heading">We are League.</p>
           <p className="company-intro__body">{intro.description}</p>
       </div>
