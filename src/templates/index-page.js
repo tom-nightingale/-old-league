@@ -5,7 +5,8 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Services from '../components/Services'
 import Icon from '../components/NewIcon'
-import iconlogo from "../img/logo-icon--beige.svg";
+import iconLogo from "../img/logo-icon--beige.svg";
+import verticalLogo from "../img/logo-text--vertical.svg";
 
 export const IndexPageTemplate = ({
   heroImage,
@@ -40,11 +41,18 @@ export const IndexPageTemplate = ({
 
       <div className="company-intro">
           <div className="company-intro__container">
-              <img className="navigation__icon-logo" src={iconlogo} alt="League Digital" />
-              <p className="company-intro__heading">We are League.</p>
+
+              <div className="company-intro__heading">
+
+
+                  <img className="company-intro__icon-logo" src={verticalLogo} alt="League Digital Logo" />
+                  <p>We are League.</p>
+              </div>
               <div className="company-intro__body">
                   <p>We're a group of experienced, multi-disciplined digital experts who strive to go above and beyond for our clients.</p>
-                  <p>We believe that honesty, transparency and creativity pave the way for long standing clients who achieve their digital goals.</p>
+                  <p>A wealth of experience has tought us that honesty, transparency and creativity pave the way for long standing clients that achieve their digital goals.</p>
+                  <p>Whether you're a small business looking to launch a digital presence, or a well established organisation looking to refresh and renovate your existing assets, we can help.</p>
+                  <p>Our staff have worked in the digital industry for over 10 years, with experience in <Link to="/services/web-design">web design</Link>, <Link to="/services/seo">search engine optimisation</Link> and <Link to="/services/paid-marketing">paid marketing</Link>.</p>
               </div>
           </div>
       </div>

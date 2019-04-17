@@ -1,9 +1,13 @@
 .company-intro {
     background: $beige;
-    padding: 2rem;
+    padding: 3rem 2rem 2rem;
 
     &__container {
         @include container;
+    }
+
+    &__icon-logo {
+        display: none;
     }
 
     &__heading {
@@ -15,10 +19,64 @@
     &__body {
         p {
             margin-bottom: 2rem;
+
+            &:first-child {
+                @include primary-font-bold;
+            }
         }
     }
 
     @include bp600 {
         background: $blanc;
+    }
+
+    @include bp800 {
+        padding: 5rem 2rem;
+
+        &__container {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &__heading {
+            position: relative;
+            display: flex;
+            width: 35%;
+            text-align: center;
+            font-size: 3.25rem;
+
+            p {
+                margin: auto;
+            }
+        }
+
+        &__icon-logo {
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            max-width: 50px;
+            opacity: .05;
+        }
+
+        &__body {
+            width: 60%;
+        }
+    }
+
+    @include bp1200 {
+        padding: 10rem 2rem;
+
+        &__heading {
+            font-size: 4.5rem;
+        }
+    }
+
+    @include bp1600 {
+        padding: 14rem 2rem;
     }
 }
