@@ -13,7 +13,9 @@
     }
 
     &__body {
-
+        p {
+            margin-bottom: 2rem;
+        }
     }
 
     @include bp600 {

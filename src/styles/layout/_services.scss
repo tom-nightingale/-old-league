@@ -62,6 +62,10 @@
     background-size: cover;
     background-position: center;
 
+    &:last {
+        margin-bottom: 0;
+    }
+
     &:after {
         content: '';
         position: absolute;
