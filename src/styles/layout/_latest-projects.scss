@@ -1,8 +1,21 @@
-.latest-projects {
-    padding: 1rem;
+.projects {
+    background: rgba($teal-dark, .1);
 
     &__heading {
+        padding: 6rem 2rem 2rem;
+        color: $teal-dark;
         font-size: 2.5rem;
         @include primary-font-extra-bold;
+    }
+}
+
+.project {
+    padding: 2rem;
+    background: $beige;
+
+    &__heading {
+        @include primary-font-bold;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
 }

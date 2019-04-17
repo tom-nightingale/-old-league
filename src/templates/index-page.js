@@ -51,17 +51,17 @@ export const IndexPageTemplate = ({
 
       <Services heading={services.heading} description={services.description} gridItems={services.service} />
 
-      <div className="latest-projects">
-          <p className="latest-projects__heading">Our Latest Projects</p>
+      <div className="projects">
+          <p className="projects__heading">Our Latest Projects</p>
 
-          <div className="latest-project-single">
-              <p className="latest-project-single__heading">Project Heading</p>
-              <p className="latest-project-single__intro">Project introduction will go here</p>
+          <div className="project">
+              <p className="project__heading">Project Heading</p>
+              <p className="project__intro">Project introduction will go here</p>
           </div>
 
-          <div className="latest-project-single">
-              <p className="latest-project-single__heading">Project Heading</p>
-              <p className="latest-project-single__intro">Project introduction will go here</p>
+          <div className="project">
+              <p className="project__heading">Project Heading</p>
+              <p className="project__intro">Project introduction will go here</p>
           </div>
       </div>
 

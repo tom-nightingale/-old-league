@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import iconlogo from "../img/logo-icon--beige.svg";
-import Icon from './NewIcon';
+import Icon from './Icon';
 
 const Navigation = class extends React.Component {
   constructor(props) {
