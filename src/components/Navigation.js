@@ -136,9 +136,7 @@ const Navigation = class extends React.Component {
               </li>
 
               <li className="navigation__list-item">
-                  <Link className="navigation__item" to="/contact/examples">
-                    Form Examples
-                  </Link>
+                  <a className="navigation__item navigation__item--call" href="tel:07732575227">Call 07732 575 227</a>
               </li>
 
           </ul>

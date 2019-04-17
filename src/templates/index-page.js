@@ -37,7 +37,7 @@ export const IndexPageTemplate = ({
 
       </div>
 
-      <div className="container">
+      <div className="who-we-are">
           <h1>{intro.heading}</h1>
           <h3>{intro.subheading}</h3>
           {intro.description}
