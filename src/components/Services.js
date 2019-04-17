@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import Icon from './Icon';
+import Icon from './NewIcon';
 
 const FeatureGrid = ({ heading, description, gridItems }) => (
   <div className="services">
