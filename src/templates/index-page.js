@@ -47,7 +47,6 @@ export const IndexPageTemplate = ({
                   <p className="company-intro__heading">We are <span>League</span>.</p>
               </div>
               <div className="company-intro__body">
-                  <h2>Who are we?</h2>
                   <p>We're a group of experienced, multi-disciplined digital experts who strive to go above and beyond for our clients.</p>
                   <p>A wealth of experience has tought us that honesty, transparency and creativity pave the way for long standing clients that achieve their digital goals.</p>
                   <p>Whether you're a small business looking to launch a digital presence, or a well established organisation looking to refresh and renovate your existing assets, we can help.</p>

@@ -4,6 +4,7 @@
 
     &__container {
         @include container;
+        max-width: 1300px;
     }
 
     &__icon-logo {
@@ -20,28 +21,16 @@
         z-index: 1;
         font-size: 2.5rem;
         @include primary-font-extra-bold;
-
-        span {
-            // background: $blue-light;
-            // color: $beige;
-            // padding: 2rem 2rem 1rem 2rem;
-            // text-transform: uppercase;
-            // letter-spacing: 5px;
-        }
     }
 
     &__body {
-        h2 {
-            display: none;
-            margin-bottom: 2rem;
-
-            & + p {
-                @include primary-font-bold;
-            }
-        }
-
         p {
             margin-bottom: 2rem;
+
+            &:first-child {
+                @include primary-font-bold;
+                font-size: 2rem;
+            }
         }
     }
 
@@ -83,8 +72,8 @@
             font-size: 1.7rem;
             line-height: 1.8;
 
-            h2 {
-                display: block;
+            p:first-child {
+                font-size: 2rem;
             }
         }
 
@@ -108,8 +97,10 @@
             font-size: 4.5rem;
         }
 
-        &__body h2 + p {
-            font-size: 2rem;
+        &__body p:first-child {
+            @include primary-font-extra-bold;
+            font-size: 3rem;
+            line-height: 1.6;
         }
     }
 
