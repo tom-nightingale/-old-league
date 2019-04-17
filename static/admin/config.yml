@@ -41,7 +41,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Hero Image, name: heroImage, widget: image}
           - {label: Hero, name: hero, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: text}, {label: Button Text, name: buttonText, widget: string}, {label: Button Destination, name: buttonDestination, widget: string}]}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Description, name: description, widget: markdown}]}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}]}
           - {label: Services, name: services, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Service, name: service, widget: list, fields: [{label: Icon, name: icon, widget: string}, {label: Image, name: image, widget: image}, {label: Link, name: link, widget: string}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}]}
       - file: "src/pages/about/index.md"
         label: "About"

@@ -42,8 +42,11 @@ export const IndexPageTemplate = ({
           <div className="company-intro__container">
               <img className="navigation__icon-logo" src={iconlogo} alt="League Digital" />
               <p className="company-intro__heading">We are League.</p>
-              <p className="company-intro__body">{intro.description}</p>
-          </div>          
+              <div className="company-intro__body">
+                  <p>We're a group of experienced, multi-disciplined digital experts who strive to go above and beyond for our clients.</p>
+                  <p>We believe that honesty, transparency and creativity pave the way for long standing clients who achieve their digital goals.</p>
+              </div>
+          </div>
       </div>
 
       <Services heading={services.heading} description={services.description} gridItems={services.service} />
