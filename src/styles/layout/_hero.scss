@@ -15,7 +15,7 @@
         box-shadow: inset 0px 20px 70px -20px darken($blue-dark, 5%);
         color: $beige;
         background-blend-mode: multiply;
-        background-color: $teal;
+        background-color: $teal-light;
         background-size: cover;
         background-position: center;
         display: flex;
@@ -120,7 +120,7 @@
             z-index: 3;
 
             &::selection {
-                background: $teal;
+                background: $teal-light;
                 color: $beige;
             }
         }
@@ -130,7 +130,7 @@
             font-size: 2rem;
 
             &::selection {
-                background: $teal;
+                background: $teal-light;
                 color: $beige;
             }
         }
@@ -140,7 +140,7 @@
             width: 300px;
             padding: 1.5rem;
             text-align: center;
-            background: $teal;
+            background: $teal-light;
             color: $beige;
             font-size: 1.8rem;
         }
@@ -151,7 +151,7 @@
             box-shadow: inset 0px 20px 70px -13px darken($blue-dark, 5%);
             color: $beige;
             background-blend-mode: multiply;
-            background-color: $teal;
+            background-color: $teal-light;
             background-size: cover;
             background-position: center;
 
@@ -159,7 +159,7 @@
                 left: -53.5%;
 
                 &::selection {
-                    background: $teal;
+                    background: $teal-light;
                     color: $beige;
                 }
             }
@@ -168,7 +168,7 @@
                 left: -53.2%;
 
                 &::selection {
-                    background: $teal;
+                    background: $teal-light;
                     color: $beige;
                 }
             }

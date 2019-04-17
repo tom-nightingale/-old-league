@@ -1,5 +1,5 @@
 .hamburger-menu {
-    color: $teal;
+    color: $teal-light;
 }
 
 .navigation {
@@ -31,7 +31,7 @@
         }
 
         &[aria-current] {
-            color: $teal;
+            color: $teal-light;
         }
 
         span,
@@ -51,7 +51,7 @@
         position: absolute;
         top: 1.25rem;
         right: 1.25rem;
-        color: $teal;
+        color: $teal-light;
         padding: .5rem 1rem;
         line-height: 1;
         background: lighten($blue-dark, 5%);
@@ -119,7 +119,7 @@
             transition: .2s;
 
             &[aria-current] {
-                color: $teal;
+                color: $teal-light;
             }
 
             span {
@@ -127,7 +127,7 @@
             }
 
             &:hover {
-                color: rgba($teal, .75);
+                color: rgba($teal-light, .75);
 
                 span {
                     color: $blue-dark;
@@ -137,7 +137,7 @@
             //modifiers
             &--call {
                 align-self: center;
-                background: $teal;
+                background: $teal-light;
                 color: $blanc;
                 padding: 1rem;
                 border-radius: 5px;

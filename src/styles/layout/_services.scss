@@ -62,7 +62,7 @@
     background-size: cover;
     background-position: center;
 
-    &:last {
+    &:last-child {
         margin-bottom: 0;
     }
 
@@ -94,7 +94,7 @@
         margin-bottom: 1rem;
         @include primary-font-extra-bold;
         font-size: 1.8rem;
-        background: $teal;
+        background: $teal-light;
         color: $beige;
         padding: 1.5rem 1rem 1rem;
     }
@@ -108,7 +108,7 @@
 
     &:hover {
         &:after {
-            background: $teal;
+            background: $teal-light;
         }
 
         svg {
