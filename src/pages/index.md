@@ -9,11 +9,22 @@ hero:
 intro:
   description: >-
     We're a group of experienced, multi-disciplined digital experts who strive
-    to go above and beyond for our clients. 
+    to go above and beyond for our clients.
 
 
-    We believe that honesty, transparency and creativity pave the way for long
-    standing clients who achieve their digital goals.
+    A wealth of experience has tought us that honesty, transparency and
+    creativity pave the way for long standing clients that achieve their digital
+    goals.
+
+
+    Whether you're a small business looking to launch a digital presence, or a
+    well established organisation looking to refresh and renovate your existing
+    assets, we can help.
+
+
+    Our staff have worked in the digital industry for over 10 years, with
+    experience in [web design](/services/web-design), [search engine
+    optimisation](/services/seo) and [paid marketing.](/services/paid-marketing)
   heading: Who we are.
   subheading: Intro Subheading
 services:
