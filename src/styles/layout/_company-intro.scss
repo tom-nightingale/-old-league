@@ -28,6 +28,7 @@
 
     @include bp600 {
         background: $blanc;
+        padding: 4rem 2rem;
     }
 
     @include bp800 {
@@ -52,6 +53,12 @@
             }
         }
 
+        &__body {
+            width: 60%;
+            font-size: 1.7rem;
+            line-height: 1.8;
+        }
+
         &__icon-logo {
             display: block;
             margin: 0 auto;
@@ -62,10 +69,6 @@
             max-width: 50px;
             opacity: .05;
         }
-
-        &__body {
-            width: 60%;
-        }
     }
 
     @include bp1200 {
@@ -73,6 +76,10 @@
 
         &__heading {
             font-size: 4.5rem;
+        }
+
+        &__body p:first-child {
+            font-size: 2rem;
         }
     }
 
