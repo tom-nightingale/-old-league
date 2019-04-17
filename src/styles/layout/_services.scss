@@ -1,7 +1,8 @@
 .services {
     background: $blanc;
     padding: 3rem 2rem;
-    background-color: $blue-dark;
+    // background-color: $blue-dark;
+    @include darkGradient();
     background-size: cover;
     background-blend-mode: multiply;
     color: $beige;
@@ -62,8 +63,10 @@
     background-size: cover;
     background-position: center;
 
-    &:last-child {
-        margin-bottom: 0;
+    @media (max-width: 599px) {
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &:after {

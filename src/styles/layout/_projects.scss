@@ -1,5 +1,6 @@
 .projects {
     background: $blanc;
+    padding-bottom: 6rem;
 
     &__heading {
         padding: 6rem 2rem 2rem;
@@ -7,15 +8,63 @@
         font-size: 2.5rem;
         @include primary-font-extra-bold;
     }
+
+    @include bp600 {
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 2rem;
+        }
+    }
 }
 
 .project {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
-    background: $beige;
+    min-height: 300px;
+    margin-bottom: 2rem;
+    background-color: $beige;
+    background-size: cover;
+    text-decoration: none;
+    transition: .5s;
+
+    &:after {
+        content: '';
+
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     &__heading {
+        display: inline-block;
+        width: auto;
+        padding: 1rem;
         @include primary-font-bold;
         font-size: 1.8rem;
-        margin-bottom: 1rem;
+        color: $blue-dark;
+        background: $blanc;
+    }
+
+    &__intro {
+        background: $yellow;
+        padding: 2rem;
+        color: $blue-dark;
+    }
+
+    &:hover {
+        background-blend-mode: normal;
+    }
+
+    @include bp600 {
+        width: 49.5%;
+        margin-bottom: 0;
     }
 }

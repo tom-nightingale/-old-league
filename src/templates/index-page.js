@@ -54,14 +54,34 @@ export const IndexPageTemplate = ({
       <div className="projects">
           <p className="projects__heading">Our Latest Projects</p>
 
-          <div className="project">
-              <p className="project__heading">Project Heading</p>
-              <p className="project__intro">Project introduction will go here</p>
-          </div>
+          <div className="projects__container">
 
-          <div className="project">
-              <p className="project__heading">Project Heading</p>
-              <p className="project__intro">Project introduction will go here</p>
+              <Link
+              to="/services"
+              className="project"
+              style={{
+                    backgroundImage: `url(${
+                      !!heroImage.childImageSharp ? heroImage.childImageSharp.fluid.src : heroImage
+                    })`,
+                  }}
+              >
+                  <p className="project__heading">Project Heading</p>
+                  <p className="project__intro">Project introduction will go here</p>
+              </Link>
+
+              <Link
+              to="/services"
+              className="project"
+              style={{
+                    backgroundImage: `url(${
+                      !!heroImage.childImageSharp ? heroImage.childImageSharp.fluid.src : heroImage
+                    })`,
+                  }}
+              >
+                  <p className="project__heading">Project Heading</p>
+                  <p className="project__intro">Project introduction will go here</p>
+              </Link>
+
           </div>
       </div>
 
