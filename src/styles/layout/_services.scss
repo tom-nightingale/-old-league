@@ -1,6 +1,6 @@
 .services {
     background: $blanc;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
     background-color: $blue-dark;
     background-size: cover;
     background-blend-mode: multiply;
@@ -11,12 +11,13 @@
     }
 
     &__heading {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         @include primary-font-extra-bold;
+        margin-bottom: 1rem;
     }
 
     &__description {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     @media (min-width: 600px) {
