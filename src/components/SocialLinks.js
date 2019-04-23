@@ -2,12 +2,11 @@ import React from 'react'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
 
 const SocialLinks = class extends React.Component {
   render() {
     return (
-      <div class="social-links">
+      <div className="social-links">
           <a title="facebook" href="https://facebook.com">
             <img
               src={facebook}
