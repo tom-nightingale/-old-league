@@ -7,7 +7,7 @@ import vimeo from '../img/social/vimeo.svg'
 const SocialLinks = class extends React.Component {
   render() {
     return (
-      <div>
+      <div class="social-links">
           <a title="facebook" href="https://facebook.com">
             <img
               src={facebook}
@@ -27,13 +27,6 @@ const SocialLinks = class extends React.Component {
             <img
               src={instagram}
               alt="Instagram"
-              style={{ width: '1em', height: '1em' }}
-            />
-          </a>
-          <a title="vimeo" href="https://vimeo.com">
-            <img
-              src={vimeo}
-              alt="Vimeo"
               style={{ width: '1em', height: '1em' }}
             />
           </a>

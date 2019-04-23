@@ -23,28 +23,9 @@
     }
 
     &__body {
-        p {
-            margin-bottom: 2rem;
-
-            &:first-child {
-                @include primary-font-bold;
-                font-size: 2rem;
-            }
-        }
-
-        a {
-            display: inline-block;
-            text-decoration: none;
-            @include primary-font-bold;
-            color: $teal-dark;
-            background: rgba($teal-light, .05);
-            padding: .5rem 1rem;
-            transition: .2s;
-
-            &:hover {
-                background: rgba($teal-dark, .1);
-            }
-        }
+        p:first-child {
+			@include primary-font-extra-bold;
+		}
     }
 
     @include bp600 {

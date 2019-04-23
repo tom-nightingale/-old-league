@@ -6,11 +6,13 @@ import Icon from './NewIcon';
 const FeatureGrid = ({ heading, description, gridItems }) => (
   <div className="services">
 
-      <div className="services__container">
+      <p className="services__heading">{heading}</p>
 
-          <p className="services__heading">{heading}</p>
-          
-          <p className="services__description">{description}</p>
+      <p className="services__description">{description}</p>
+
+      <Link to="/services" className="btn btn--outline-beige">Learn more</Link>
+
+     <div className="services__container">
 
         {gridItems.map(item => (
           <Link

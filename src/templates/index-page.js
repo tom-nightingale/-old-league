@@ -48,46 +48,36 @@ export const IndexPageTemplate = ({
                   <p className="company-intro__heading">We are <span>League</span>.</p>
               </div>
 
-              <MarkdownContent content={intro.body} className="company-intro__body" />
+              <MarkdownContent content={intro.body} className="company-intro__body copy" />
 
           </div>
       </div>
 
       <Services heading={services.heading} description={services.description} gridItems={services.service} />
 
-      <div className="projects">
-          <p className="projects__heading">Our Latest Projects</p>
+      <div className="project__container">
 
-          <div className="projects__container">
+          <Link
+          to="/services"
+          className="project-image"
+          style={{
+                backgroundImage: `url(${
+                  !!heroImage.childImageSharp ? heroImage.childImageSharp.fluid.src : heroImage
+                })`,
+              }}
+          >
+          </Link>
 
-              <Link
-              to="/services"
-              className="project"
-              style={{
-                    backgroundImage: `url(${
-                      !!heroImage.childImageSharp ? heroImage.childImageSharp.fluid.src : heroImage
-                    })`,
-                  }}
-              >
-                  <p className="project__heading">Project Heading</p>
-                  <p className="project__intro">Project introduction will go here</p>
-              </Link>
-
-              <Link
-              to="/services"
-              className="project"
-              style={{
-                    backgroundImage: `url(${
-                      !!heroImage.childImageSharp ? heroImage.childImageSharp.fluid.src : heroImage
-                    })`,
-                  }}
-              >
-                  <p className="project__heading">Project Heading</p>
-                  <p className="project__intro">Project introduction will go here</p>
-              </Link>
-
+          <div className="project-intro copy">
+              <p className="project-intro__heading">Latest Projects</p>
+              <p className="project-intro__subheading">Midland Speed Championships</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, porro. Alias iste ex, quas nisi temporibus adipisci fugiat voluptates vel hic blanditiis, sunt illo eligendi? Voluptatibus sunt suscipit ut fugiat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, expedita blanditiis odit maxime. Laudantium veniam est, temporibus quas aperiam rerum tempora deleniti, eaque cum quidem quisquam quam, culpa iusto ad.</p>
+              <Link className="btn btn--outline-teal" to="/services">See more projects</Link>
           </div>
+
       </div>
+
 
   </div>
 );

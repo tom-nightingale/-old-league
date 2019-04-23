@@ -1,3 +1,22 @@
 button {
     border: none;
 }
+
+.btn {
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    @include primary-font-extra-bold;
+
+    &--outline-beige {
+        color: $beige;
+        border: 2px solid $beige;
+    }
+
+    &--outline-teal {
+        color: $teal-light;
+        border: 2px solid $teal-light;
+    }
+}

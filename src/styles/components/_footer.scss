@@ -1,0 +1,70 @@
+.footer {
+    padding: 3rem 2rem;
+    background: $blue-dark;
+    color: $beige;
+    text-align: center;
+
+    a {
+        color: $beige;
+    }
+
+    .navigation__sub {
+        display: none;
+    }
+
+    .navigation__item {
+        color: $beige;
+        margin: .5rem 0;
+        padding: 0;
+    }
+
+    .social-links {
+        a {
+            display: inline-block;
+            margin: 1rem;
+            padding: 1rem 1rem .75rem 1rem;
+            font-size: 2rem;
+            line-height: 1;
+            background: $beige;
+            color: $blue-dark;
+        }
+    }
+
+    &__section {
+        margin: 2rem auto;
+    }
+
+    &__logo {
+        display: block;
+        max-width: 75px;
+        margin: 0 auto 2rem auto;
+    }
+
+    &__touchpoint {
+        display: block;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background: rgba($beige, .05);
+        color: $beige;
+        text-decoration: none;
+        @include primary-font-bold;
+    }
+
+    @include bp1000 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        &__section {
+            width: 32%;
+        }
+
+        .navigation__item {
+            display: inline-block;
+            background: rgba($teal-light, .05);
+            padding: 1.5rem;
+            margin: .5rem;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.copy {
+	p {
+		margin-bottom: 2rem;
+	}
+
+	p > a {
+		display: inline-block;
+		text-decoration: none;
+		@include primary-font-bold;
+		color: $teal-dark;
+		background: rgba($teal-light, .05);
+		padding: .5rem 1rem;
+		transition: .2s;
+
+		&:hover {
+			background: rgba($teal-dark, .1);
+		}
+	}
+}
