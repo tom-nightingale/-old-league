@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
       <div className="hero">
 
           <div className="hero__section">
-              <p className="hero__headline">Web design & <br />digital marketing.</p>
+              <p className="hero__headline">{hero.heading}</p>
               <p className="hero__subline">{hero.subheading}</p>
               <Link className="hero__button" to={hero.buttonDestination}>{hero.buttonText} <Icon name="icon-right-open-mini"/></Link>
           </div>
@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
                 })`,
               }}
           >
-              <p className="hero__headline">Web design & <br />digital marketing.</p>
+              <p className="hero__headline">{hero.heading}</p>
               <p className="hero__subline">{hero.subheading}</p>
               <Link className="hero__button" to={hero.buttonDestination}>{hero.buttonText} <Icon name="icon-right-open-mini"/></Link>
           </div>

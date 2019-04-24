@@ -1,8 +1,46 @@
 .footer {
-    padding: 3rem 2rem;
     background: $blue-dark;
     color: $beige;
     text-align: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2rem;
+    }
+
+    &__section {
+        margin: 2rem auto;
+    }
+
+    &__identity {
+        order: -1;
+    }
+
+    &__logo {
+        display: block;
+        width: 100%;
+        max-width: 75px;
+        margin: 0 auto;
+    }
+
+    &__touchpoint {
+        display: block;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background: rgba($beige, .05);
+        color: $beige;
+        text-decoration: none;
+        @include primary-font-bold;
+    }
+
+    &__legal {
+        width: 100%;
+        font-size: 1.4rem;
+        background: darken($blue-dark, 5%);
+        padding: 2rem;
+        margin: 0;
+    }
 
     a {
         color: $beige;
@@ -18,53 +56,52 @@
         padding: 0;
     }
 
-    .social-links {
-        a {
-            display: inline-block;
-            margin: 1rem;
-            padding: 1rem 1rem .75rem 1rem;
-            font-size: 2rem;
-            line-height: 1;
-            background: $beige;
-            color: $blue-dark;
-        }
-    }
-
-    &__section {
-        margin: 2rem auto;
-    }
-
-    &__logo {
-        display: block;
-        max-width: 75px;
-        margin: 0 auto 2rem auto;
-    }
-
-    &__touchpoint {
-        display: block;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        background: rgba($beige, .05);
-        color: $beige;
-        text-decoration: none;
-        @include primary-font-bold;
+    .social-links a {
+        display: inline-block;
+        margin: 1rem;
+        padding: 1rem 1rem .75rem 1rem;
+        font-size: 2rem;
+        line-height: 1;
+        background: $beige;
+        color: $blue-dark;
     }
 
     @include bp1000 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        &__container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            @include container;
+        }
 
-        &__section {
-            width: 32%;
+        &__identity {
+            width: 20%;
+        }
+
+        &__social {
+            width: 30%;
+        }
+
+        &__nav {
+            width: 50%;
+            text-align: left;
         }
 
         .navigation__item {
             display: inline-block;
-            background: rgba($teal-light, .05);
+            width: 30%;
             padding: 1.5rem;
             margin: .5rem;
+            text-align: left;
+        }
+
+        &__legal {
+            p {
+                @include container;
+                text-align: left;
+            }
         }
     }
 }

@@ -8,12 +8,12 @@
     'base/_typography';
 
 @import
+    'components/_header',
     'components/_buttons',
     'components/_navigation',
     'components/_footer';
 
 @import
-    'layout/_header',
     'layout/_hero',
     'layout/_company-intro',
     'layout/_projects',
