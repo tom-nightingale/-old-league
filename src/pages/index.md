@@ -4,7 +4,7 @@ heroImage: /img/workplace-1245776_1920.jpg
 hero:
   buttonDestination: /services
   buttonText: See how we can help
-  heading: Web Design & Digital Marketing Nottingham
+  heading: Web design & digital marketing
   subheading: We design and build websites that generate more leads for your business.
 intro:
   body: >-
