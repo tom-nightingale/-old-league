@@ -13,10 +13,27 @@ button {
     &--outline-beige {
         color: $beige;
         border: 2px solid $beige;
+
+        &:hover {
+
+        }
     }
 
     &--outline-teal {
         color: $teal-light;
         border: 2px solid $teal-light;
+
+        &:hover {
+
+        }
+    }
+
+    &--solid-teal {
+        background: $teal-light;
+        color: $beige;
+
+        &:hover {
+
+        }
     }
 }

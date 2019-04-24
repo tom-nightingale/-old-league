@@ -130,7 +130,7 @@ const Navigation = class extends React.Component {
               </li>
 
               <li className="navigation__list-item">
-                  <Link className="navigation__item navigation__item--contact" to="/contact">
+                  <Link className="navigation__item navigation__item--contact btn btn--outline-teal" to="/contact">
                     Contact Us
                   </Link>
               </li>
