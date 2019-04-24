@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import Icon from './NewIcon';
 
 const FeatureGrid = ({ heading, description, gridItems }) => (
   <div className="services">
@@ -24,7 +23,7 @@ const FeatureGrid = ({ heading, description, gridItems }) => (
               !!item.image.childImageSharp ? item.image.childImageSharp.fluid.src : item.image
             })`,
           }}>
-              <Icon name={item.icon}/>
+              {item.icon}
               <p className="services-single__heading">{item.heading}</p>
               <p className="services-single__text">{item.text}</p>
           </Link>
