@@ -39,7 +39,7 @@ services:
       icon: icon-gist
       image: /img/code-1839406_1920.jpg
       link: /services/web-design
-      text: Design built with leads in mind
+      text: Websites that drive you customers
     - heading: Digital Marketing
       icon: icon-search
       image: /img/digital-marketing-1433427_1920.jpg
