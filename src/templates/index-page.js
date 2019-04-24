@@ -6,7 +6,6 @@ import MarkdownContent from '../components/MarkdownContent'
 import Layout from '../components/Layout'
 import Services from '../components/Services'
 import Icon from '../components/NewIcon'
-import iconLogo from "../img/logo-icon--beige.svg";
 import verticalLogo from "../img/logo-text--vertical.svg";
 
 export const IndexPageTemplate = ({
@@ -20,7 +19,7 @@ export const IndexPageTemplate = ({
       <div className="hero">
 
           <div className="hero__section">
-              <p className="hero__headline">{hero.heading}</p>
+              <h1 className="hero__headline">{hero.heading}</h1>
               <p className="hero__subline">{hero.subheading}</p>
               <Link className="hero__button" to={hero.buttonDestination}>{hero.buttonText} <Icon name="icon-right-open-mini"/></Link>
           </div>

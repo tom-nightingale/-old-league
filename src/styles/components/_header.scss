@@ -35,5 +35,9 @@ header {
 
     .logo {
         width: 25%;
+
+        &__image {
+            max-width: 180px;
+        }
     }
 }
