@@ -5,7 +5,8 @@ import MarkdownContent from '../components/MarkdownContent'
 
 import Layout from '../components/Layout'
 import Services from '../components/Services'
-import Icon from '../components/NewIcon'
+import { IoIosArrowForward } from "react-icons/io";
+
 import verticalLogo from "../img/logo-text--vertical.svg";
 
 export const IndexPageTemplate = ({
@@ -21,7 +22,7 @@ export const IndexPageTemplate = ({
           <div className="hero__section">
               <h1 className="hero__headline">{hero.heading}</h1>
               <p className="hero__subline">{hero.subheading}</p>
-              <Link className="hero__button" to={hero.buttonDestination}>{hero.buttonText} <Icon name="icon-right-open-mini"/></Link>
+              <Link className="hero__button" to={hero.buttonDestination}>{hero.buttonText} <IoIosArrowForward /></Link>
           </div>
 
           <div
@@ -34,7 +35,7 @@ export const IndexPageTemplate = ({
           >
               <p className="hero__headline">{hero.heading}</p>
               <p className="hero__subline">{hero.subheading}</p>
-              <Link className="hero__button" to={hero.buttonDestination}>{hero.buttonText} <Icon name="icon-right-open-mini"/></Link>
+              <Link className="hero__button" to={hero.buttonDestination}>{hero.buttonText} <IoIosArrowForward /></Link>
           </div>
 
       </div>

@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import iconlogo from "../img/logo-icon--beige.svg";
-import Icon from './NewIcon';
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosMenu } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
+
 
 const Navigation = class extends React.Component {
   constructor(props) {
@@ -39,12 +42,12 @@ const Navigation = class extends React.Component {
       <div className="navigation-hold">
 
       <a href="#" className="hamburger-menu" data-target="navMenu" onClick={() => this.toggleHamburger()}>
-          <Icon name="icon-three-bars" />
+        <IoIosMenu />
       </a>
 
         <nav role="navigation" className={`navigation ${this.state.navBarActiveClass}`}>
 
-          <a className="navigation__icon-close" href="#" onClick={() => this.toggleHamburger()}><Icon name="icon-x" /></a>
+          <a className="navigation__icon-close" href="#" onClick={() => this.toggleHamburger()}><IoMdClose /></a>
 
 
 
@@ -62,7 +65,7 @@ const Navigation = class extends React.Component {
 
                   <Link className="navigation__item" to="/services">
                     Services
-                    <Icon name="icon-down-open-mini" />
+                    <IoIosArrowDown />
                   </Link>
 
                   <ul className="navigation__sub">
