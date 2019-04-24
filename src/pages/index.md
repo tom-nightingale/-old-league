@@ -4,7 +4,7 @@ heroImage: /img/workplace-1245776_1920.jpg
 hero:
   buttonDestination: /services
   buttonText: See how we can help
-  heading: Web Design & <br> Digital Marketing Nottingham
+  heading: Web Design & Digital Marketing Nottingham
   subheading: We design and build websites that generate more leads for your business.
 intro:
   body: >-
@@ -25,29 +25,30 @@ intro:
     Our staff have worked in the digital industry for over 10 years, with
     experience in [web design](/services/web-design), [search engine
     optimisation](/services/seo) and [paid marketing.](/services/paid-marketing)
-  heading: Who we are.
+  heading: We are League.
 services:
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+  description: We offer a range of web design & digital marketing services...
   heading: What we're good at
   service:
     - heading: Strategy
       icon: icon-telescope
       image: /img/startup-593341_1920.jpg
       link: /services/strategy
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      text: Marketing strategies built to work
     - heading: Design & Development
       icon: icon-gist
       image: /img/code-1839406_1920.jpg
       link: /services/web-design
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      text: Design built with leads in mind
     - heading: Digital Marketing
       icon: icon-search
       image: /img/digital-marketing-1433427_1920.jpg
       link: /services/digital-marketing
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      text: Ongoing monthly digital optimisation
     - heading: Content Marketing
       icon: icon-rocket
       image: /img/apple-computer-decor-326502.jpg
       link: /services/content-marketing
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      text: Fresh content to help drive traffic
 ---
+
