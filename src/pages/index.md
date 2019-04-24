@@ -8,7 +8,7 @@ hero:
   subheading: We design and build websites that generate more leads for your business.
 intro:
   body: >-
-    ##digital marketing Nottingham
+    ##Digital marketing Nottingham
 
 
     We're a group of experienced, multi-disciplined digital experts who strive
