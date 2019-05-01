@@ -77,8 +77,7 @@ export const IndexPageTemplate = ({
           </div>
 
       </div>
-
-
+      
   </div>
 );
 
